@@ -9,6 +9,8 @@
     - Botões ou Chamadas para Ação: Poppins SemiBold (Peso 600).
 */
 
+/* Variáveis CSS */
+
 :root {
     --fundo: #101920;
     --cor-Principal: #608BDA;
@@ -19,6 +21,8 @@
     --corpo: "Roboto", sans-serif;
     --chamadas: "Poppins", sans-serif;
 }
+
+/* Estilizações gerais da página*/
 
 * {
     padding: 0;
@@ -33,6 +37,8 @@ html, body {
     color: white;
     background-color: var(--fundo);
 }
+
+/* Header */
 
 header h1{
     font-family: var(--titulos);
@@ -55,6 +61,8 @@ header > div {
     align-items: center;
     width: 100%;
 }
+
+/* Navegação Principal */
 
 nav {
     position: absolute;
@@ -112,13 +120,42 @@ nav #borda::before {
     box-sizing: border-box;
 }
 
+/* Conteúdo Principal */
+
+main {
+    margin: 2vw;
+    padding: 6vw;
+    padding-top: 4vh;
+    margin-top: 4vh;
+}
+
+main article section h1 {
+    font-family: var(--titulos);
+    font-weight: 800;
+    color: var(--cor-Principal);
+    font-size: 5vw;
+}
+
+main article section p {
+    font-family: var(--corpo);
+    margin-top: 2vh;
+    font-size: 2vw;
+}
+
+main article section p strong {
+    font-weight: 700;
+    color: var(--cor-Principal);
+}
+
+/* Rodapé */
+
 footer div#primeiro {
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     background-color: #232323;
     font-family: var(--corpo);
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 2.3vw;
     border-bottom: 2px solid var(--bordas);
 }
 
@@ -161,6 +198,7 @@ footer div#segundo a:hover {
 }
 
 footer #titulo, footer #redes {
+    text-align: center;
     width: 250px;
 }
 
