@@ -31,9 +31,10 @@ html, body {
     margin: 0;
     padding: 0;
     color: white;
+    background-color: var(--fundo);
 }
 
-h1 {
+header h1{
     font-family: var(--titulos);
     font-weight: 800;
 }
@@ -109,5 +110,57 @@ nav #borda::before {
     background-color: black;
     width: 1px;
     box-sizing: border-box;
+}
+
+footer div#primeiro {
+    padding: 40px;
+    text-align: center;
+    background-color: #232323;
+    font-family: var(--corpo);
+    font-weight: 700;
+    font-size: 1.5em;
+    border-bottom: 2px solid var(--bordas);
+}
+
+footer div#primeiro a {
+    color: var(--cor-Principal);
+    text-decoration: none;
+    font-weight: 800;
+    transition: color 300ms;
+}
+
+footer div#primeiro a:hover {
+    color: white;
+}
+
+footer div#segundo {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: var(--cor-Principal);
+}
+
+footer h1 {
+    font-family: var(--titulos);
+    font-weight: 700;
+    width: 150px;
+}
+
+footer div#segundo a {
+    color: white;
+    font-family: var(--chamadas);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 5px;
+    font-size: 1.2em;
+    transition: color 200ms;
+}
+
+footer div#segundo a:hover {
+    color: rgba(255, 255, 255, 0.67);
+}
+
+footer #titulo, footer #redes {
+    width: 250px;
 }
 
