@@ -51,7 +51,6 @@ header {
     justify-content: start; 
     position: relative;
     padding: 25px;
-    width: 100vw;
     height: 60px;
     background-color: var(--cor-Principal);
 }
@@ -131,6 +130,7 @@ main article section h1 {
     font-weight: 800;
     color: var(--cor-Principal);
     font-size: 5vw;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
 }
 
 main article section p {
@@ -141,7 +141,7 @@ main article section p {
 }
 
 main article section p strong {
-    font-weight: 700;
+    font-weight: 800;
     color: var(--cor-Principal);
 }
 
@@ -173,6 +173,15 @@ main article section a.butn:hover {
     background-color: var(--hover);
     border: 1px solid var(--cor-Principal);
     color: rgba(255, 255, 255, 0.835);
+}
+
+main article section div.foto-1 {
+    width: 100%;
+    height: 300px;
+    background-color: var(--conteiners);
+    margin-top: 4vh;
+    border-radius: 6px;
+    border: 1px solid var(--bordas);
 }
 
 /* Rodapé */
