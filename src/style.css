@@ -128,6 +128,7 @@ main {
 main article section#secao-1 {
     padding-bottom: 5vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 3vh;
 }
 
 main article section#secao-1 h2 {
