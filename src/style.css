@@ -224,8 +224,8 @@ nav #borda::before {
     content: "";
     height: 120%;
     right: 8px;
-    background-color: black;
-    width: 1px;
+    background-color: rgba(0, 0, 0, 0.689);
+    width: 0.4px;
     box-sizing: border-box;
 }
 
