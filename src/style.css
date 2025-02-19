@@ -170,7 +170,6 @@ header > div.mobile {
     }
 
     main article section#secao-1 a.butn {
-        padding: 10px 20px !important;
         font-size: 2.6vw !important;
     }
 
@@ -277,7 +276,7 @@ main article section#secao-1 a.butn {
     text-align: center;
     background-color: var(--cor-Principal);
     color: white;
-    padding: 9px;
+    padding: 1vw;
     margin-top: 0.1vw;
     display: block;
     font-family: var(--chamadas);
