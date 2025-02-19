@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="desktop">
             <h1>
                 Vinicius
             </h1>
@@ -18,6 +18,15 @@
                 <a href="/pages/About.html" id="borda"><img src="/images/svgs/About.svg" width="30" height="30" alt="About"> Sobre</a>
                 <a href="/pages/Works.html" id="borda"><img src="/images/svgs/Works.svg" width="30" height="30" alt="Works"> Trabalhos</a>
                 <a href="/pages/Photos.html" id="borda"><img src="/images/svgs/Photos.svg" width="30" height="30" alt="Photos"> Fotos</a>
+            </nav>
+        </div>
+        <div class="mobile">
+            <button class="menu-toggle">☰</button>
+            <nav class="menu">
+                <a href="/index.html"> Home</a>
+                <a href="/pages/About.html" id="borda"> Sobre</a>
+                <a href="/pages/Works.html" id="borda"> Trabalhos</a>
+                <a href="/pages/Photos.html" id="borda"> Fotos</a>
             </nav>
         </div>
     </header>
@@ -55,3 +64,12 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    
+    toggleButton.addEventListener('click', () => {
+        menu.classList.toggle('open');
+    });
+</script>
