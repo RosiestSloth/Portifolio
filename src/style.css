@@ -125,23 +125,17 @@ header > div.mobile {
     }
 
     main article section#secao-1 {
-        padding-bottom: 5vh;
+        padding-bottom: 3vh !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.50);
         margin-bottom: 3vh;
     }
     
     main article section#secao-1 h2 {
-        font-family: var(--titulos);
-        font-weight: 800;
-        color: var(--cor-Principal);
-        font-size: 5vw;
-        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
+        font-size: 6vw !important;
     }
     
     main article section#secao-1 p {
-        font-family: var(--corpo);
-        margin-top: 2vh;
-        font-size: 2vw;
+        font-size: 2.6vw !important;
         text-align: justify;
     }
     
@@ -152,7 +146,7 @@ header > div.mobile {
     
     main article section#secao-1 p#saiba-mais {
         font-family: var(--corpo);
-        font-size: 1.2vw;
+        font-size: 2vw !important;
         font-weight: 700;
     }
 
@@ -173,6 +167,11 @@ header > div.mobile {
 
     footer div#links a {
         font-size: 3vw !important;
+    }
+
+    main article section#secao-1 a.butn {
+        padding: 10px 20px !important;
+        font-size: 2.6vw !important;
     }
 
     
