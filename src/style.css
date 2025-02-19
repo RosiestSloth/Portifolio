@@ -125,7 +125,12 @@ main {
     max-width: 1400px;
 }
 
-main article section h1 {
+main article section#secao-1 {
+    padding-bottom: 5vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+main article section#secao-1 h2 {
     font-family: var(--titulos);
     font-weight: 800;
     color: var(--cor-Principal);
@@ -133,25 +138,25 @@ main article section h1 {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
 }
 
-main article section p {
+main article section#secao-1 p {
     font-family: var(--corpo);
     margin-top: 2vh;
     font-size: 2vw;
     text-align: justify;
 }
 
-main article section p strong {
+main article section#secao-1 p strong {
     font-weight: 800;
     color: var(--cor-Principal);
 }
 
-main article section p#saiba-mais {
+main article section#secao-1 p#saiba-mais {
     font-family: var(--corpo);
     font-size: 1.2vw;
     font-weight: 700;
 }
 
-main article section a.butn {
+main article section#secao-1 a.butn {
     text-decoration: none;
     text-align: center;
     background-color: var(--cor-Principal);
@@ -169,19 +174,28 @@ main article section a.butn {
     transition: background 200ms;
 }
 
-main article section a.butn:hover {
+main article section#secao-1 a.butn:hover {
     background-color: var(--hover);
     border: 1px solid var(--cor-Principal);
     color: rgba(255, 255, 255, 0.835);
 }
 
-main article section div.foto-1 {
+main article section#secao-1 div.foto-1 {
     width: 100%;
-    height: 300px;
+    height: 25vw;
     background-color: var(--conteiners);
     margin-top: 4vh;
     border-radius: 6px;
     border: 1px solid var(--bordas);
+}
+
+main article section#secao-2 h3 {
+    font-family: var(--titulos);
+    font-weight: 800;
+    color: var(--cor-Principal);
+    font-size: 4vw;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
 }
 
 /* Rodapé */
