@@ -84,7 +84,7 @@ nav a {
     font-size: 16px;
     gap: 5px;
     padding: 8px;
-    margin: -3px 3px -3px -3px;
+    margin: -3px 5px -3px -5px;
     background-color: transparent;
     transition: color 200ms;
 }
@@ -93,11 +93,6 @@ nav a:hover {
     background-color: var(--hover);
     color: white;
     transition: background-color 300ms;
-}
-
-nav a:hover svg{
-    fill: white;
-    stroke: white;
 }
 
 nav a:first-child {
@@ -123,10 +118,12 @@ nav #borda::before {
 /* Conteúdo Principal */
 
 main {
-    margin: 2vw;
-    padding: 6vw;
+    position: relative;
+    margin: auto;
+    padding: 8vw;
     padding-top: 4vh;
     margin-top: 4vh;
+    max-width: 1400px;
 }
 
 main article section h1 {
@@ -140,11 +137,42 @@ main article section p {
     font-family: var(--corpo);
     margin-top: 2vh;
     font-size: 2vw;
+    text-align: justify;
 }
 
 main article section p strong {
     font-weight: 700;
     color: var(--cor-Principal);
+}
+
+main article section p#saiba-mais {
+    font-family: var(--corpo);
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+main article section a.butn {
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor-Principal);
+    color: white;
+    padding: 9px;
+    margin-top: 0.1vw;
+    display: block;
+    font-family: var(--chamadas);
+    font-weight: 700;
+    width: 15vw;
+    font-size: 1.6vw;
+    border-radius: 6px;
+    border: 1px solid var(--bordas);
+    transition: color 200ms;
+    transition: background 200ms;
+}
+
+main article section a.butn:hover {
+    background-color: var(--hover);
+    border: 1px solid var(--cor-Principal);
+    color: rgba(255, 255, 255, 0.835);
 }
 
 /* Rodapé */
