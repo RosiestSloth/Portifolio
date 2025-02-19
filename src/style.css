@@ -73,7 +73,7 @@ header > div.mobile {
     }
 
     header {
-        height: 1.5vh;
+        height: 3vh;
     }
 
     header > div.mobile {
@@ -87,10 +87,12 @@ header > div.mobile {
         background: var(--fundo);
         color: var(--conteiners);
         border: none;
-        padding: 15px 20px;
+        padding: 5px 15px;
         border-radius: 6px;
         cursor: pointer;
         z-index: 1000;
+        font-family: var(--chamadas);
+        font-size: 4vw;
     }
 
     .menu {
