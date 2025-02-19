@@ -65,6 +65,8 @@ header > div.mobile {
     display: none;
 }
 
+/* Mobile */
+
 @media (max-width: 800px) {
     header > div.desktop {
         display: none;
@@ -90,6 +92,7 @@ header > div.mobile {
         cursor: pointer;
         z-index: 1000;
     }
+
     .menu {
         position: fixed;
         top: -100vh;
@@ -103,6 +106,7 @@ header > div.mobile {
         justify-content: center;
         padding-bottom: 10px;
     }
+
     .menu a {
         display: block;
         color: white;
@@ -111,12 +115,67 @@ header > div.mobile {
         padding: 15px;
         border: 1px solid var(--bordas);
     }
+
     .menu a:hover {
         background: var(--hover);
     }
+
     .menu.open {
         top: 0;
     }
+
+    main article section#secao-1 {
+        padding-bottom: 5vh;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+        margin-bottom: 3vh;
+    }
+    
+    main article section#secao-1 h2 {
+        font-family: var(--titulos);
+        font-weight: 800;
+        color: var(--cor-Principal);
+        font-size: 5vw;
+        text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
+    }
+    
+    main article section#secao-1 p {
+        font-family: var(--corpo);
+        margin-top: 2vh;
+        font-size: 2vw;
+        text-align: justify;
+    }
+    
+    main article section#secao-1 p strong {
+        font-weight: 800;
+        color: var(--cor-Principal);
+    }
+    
+    main article section#secao-1 p#saiba-mais {
+        font-family: var(--corpo);
+        font-size: 1.2vw;
+        font-weight: 700;
+    }
+
+    footer div#titulo {
+        width: auto;
+    }
+
+    footer div#segundo {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1vh;
+        padding: 5vw;
+    }
+
+    footer div#segundo h1 {
+        font-size: 6vw;
+    }
+
+    footer div#links a {
+        font-size: 3vw !important;
+    }
+
+    
 }
 
 /* Navegação Principal */
@@ -288,6 +347,7 @@ footer div#segundo {
 
 footer h1 {
     font-family: var(--titulos);
+    font-size: 3vw;
     font-weight: 700;
     width: 150px;
 }
@@ -298,7 +358,7 @@ footer div#segundo a {
     text-decoration: none;
     font-weight: 700;
     margin: 5px;
-    font-size: 1.2em;
+    font-size: 2vw;
     transition: color 200ms;
 }
 
