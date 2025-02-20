@@ -21,7 +21,7 @@
             </nav>
         </div>
         <div class="mobile">
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle"><p>☰</p></button>
             <nav class="menu">
                 <a href="/index.html"> Home</a>
                 <a href="/pages/About.html" id="borda"> Sobre</a>
@@ -88,5 +88,9 @@
     
     toggleButton.addEventListener('click', () => {
         menu.classList.toggle('open');
+    });
+
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+    this.classList.toggle("ativo");
     });
 </script>

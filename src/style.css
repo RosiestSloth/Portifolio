@@ -93,13 +93,20 @@ header > div.mobile {
         z-index: 1000;
         font-family: var(--chamadas);
         font-size: 2em;
-        transition: color 300ms ease;
-        transition: background  300ms ease;
+        transition: color 300ms ease, background-color 300ms ease;
+    }
+
+    .menu-toggle p {
+        transition: transform 300ms ease;
     }
 
     .menu-toggle:hover {
         background-color: black;
         color: white;
+    }
+
+    .menu-toggle.ativo p {
+        transform: rotate(90deg);
     }
 
     .menu {
