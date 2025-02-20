@@ -96,11 +96,15 @@ header > div.mobile {
         transition: color 300ms ease, background-color 300ms ease;
         line-height: 50px;
         text-align: center;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .menu-toggle p {
         transition: transform 300ms ease;
+        display: block;
+        text-align: center;
     }
 
     .menu-toggle:hover {
@@ -110,6 +114,7 @@ header > div.mobile {
 
     .menu-toggle.ativo p {
         transform: rotate(90deg);
+        transform-origin: center;
     }
 
     .menu {
