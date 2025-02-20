@@ -241,6 +241,13 @@ nav a {
     transition: color 200ms;
 }
 
+header nav a.ativo {
+    pointer-events: none;
+    background-color: var(--hover);
+    color: white;
+    
+}
+
 #sobre {
     width: 4vw;
 }
