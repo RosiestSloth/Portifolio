@@ -86,13 +86,13 @@ header > div.mobile {
         left: 15px;
         background: var(--fundo);
         color: var(--conteiners);
-        border: none;
+        border: 1px solid var(--bordas);
         padding: 5px 15px;
         border-radius: 6px;
         cursor: pointer;
         z-index: 1000;
         font-family: var(--chamadas);
-        font-size: 4vw;
+        font-size: 2em;
     }
 
     .menu {
@@ -102,7 +102,8 @@ header > div.mobile {
         height: 50px;
         background: var(--conteiners);
         color: white;
-        padding-top: 60px;
+        padding-top: 80px;
+        z-index: 900;
         transition: top 0.3s ease;
         text-align: center;
         justify-content: center;
