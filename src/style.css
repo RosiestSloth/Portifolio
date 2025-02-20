@@ -295,14 +295,14 @@ main article section#secao-1 h2 {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
 }
 
-main article section#secao-1 p {
+main article section p {
     font-family: var(--corpo);
     margin-top: 2vh;
     font-size: 2vw;
     text-align: justify;
 }
 
-main article section#secao-1 p strong {
+main strong {
     font-weight: 800;
     color: var(--cor-Principal);
 }
@@ -346,7 +346,7 @@ main article section#secao-1 div.foto-1 {
     border: 1px solid var(--bordas);
 }
 
-main article section#secao-2 h3 {
+main h3 {
     font-family: var(--titulos);
     font-weight: 800;
     color: var(--cor-Principal);
@@ -355,11 +355,17 @@ main article section#secao-2 h3 {
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
 }
 
+#images {
+    width: 100%;
+    margin-top: 3vh;
+    object-fit: contain;
+}
+
 /* Rodapé */
 
 footer div#primeiro {
     padding: 30px;
-    text-align: center;
+    text-align: center !important;
     background-color: #232323;
     font-family: var(--corpo);
     font-weight: 700;
