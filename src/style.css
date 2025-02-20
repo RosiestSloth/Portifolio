@@ -94,7 +94,6 @@ header > div.mobile {
         font-family: var(--chamadas);
         font-size: 2em;
         transition: color 300ms ease, background-color 300ms ease;
-        line-height: 50px;
         text-align: center;
         display: flex;
         justify-content: center;
