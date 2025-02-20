@@ -93,6 +93,13 @@ header > div.mobile {
         z-index: 1000;
         font-family: var(--chamadas);
         font-size: 2em;
+        transition: color 300ms ease;
+        transition: background  300ms ease;
+    }
+
+    .menu-toggle:hover {
+        background-color: black;
+        color: white;
     }
 
     .menu {
