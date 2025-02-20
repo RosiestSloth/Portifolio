@@ -73,7 +73,7 @@ header > div.mobile {
     }
 
     header {
-        height: 3vh;
+        height: 4vh;
     }
 
     header > div.mobile {
@@ -87,7 +87,7 @@ header > div.mobile {
         background: var(--fundo);
         color: var(--conteiners);
         border: 1px solid var(--bordas);
-        padding: 5px 15px;
+        padding: 1vw 2vh;
         border-radius: 6px;
         cursor: pointer;
         z-index: 1000;
