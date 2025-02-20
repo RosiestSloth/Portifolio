@@ -95,6 +95,8 @@ header > div.mobile {
         font-size: 2em;
         transition: color 300ms ease, background-color 300ms ease;
         line-height: 50px;
+        align-items: center;
+
     }
 
     .menu-toggle p {
