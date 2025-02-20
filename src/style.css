@@ -127,6 +127,11 @@ header > div.mobile {
         top: 0;
     }
 
+    main {
+        padding: 20px !important;
+        margin-top: 10px !important; 
+    }
+
     main article section#secao-1 {
         padding-bottom: 3vh !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.50);
@@ -153,6 +158,20 @@ header > div.mobile {
         font-weight: 700;
     }
 
+    main article section#secao-1 a.butn {
+        font-size: 2.3vw !important;
+        width: 25vw !important;
+        padding: 2px 5px !important;
+    }
+
+    #sobre {
+        width: 7vw !important;
+    }
+
+    footer div#primeiro p {
+        font-size: 3.2vw;
+    }
+
     footer div#titulo {
         width: auto;
     }
@@ -171,11 +190,6 @@ header > div.mobile {
     footer div#links a {
         font-size: 3vw !important;
     }
-
-    main article section#secao-1 a.butn {
-        font-size: 2.6vw !important;
-    }
-
     
 }
 
@@ -204,6 +218,10 @@ nav a {
     margin: -3px 5px -3px -5px;
     background-color: transparent;
     transition: color 200ms;
+}
+
+#sobre {
+    width: 4vw;
 }
 
 nav a:hover {
@@ -276,22 +294,22 @@ main article section#secao-1 p#saiba-mais {
 
 main article section#secao-1 a.butn {
     text-decoration: none;
-    text-align: center;
     background-color: var(--cor-Principal);
     color: white;
-    padding: 1vw;
+    padding: 5px 5px;
+    gap: 10px;
+    width: 15vw;
     margin-top: 0.1vw;
-    display: block;
     font-family: var(--chamadas);
     font-weight: 700;
-    width: 15vw;
-    font-size: 1.6vw;
+    font-size: 1.7vw;
     border-radius: 6px;
+    align-items: center;
+    display: flex;
     border: 1px solid var(--bordas);
     transition: color 200ms;
     transition: background 200ms;
 }
-
 main article section#secao-1 a.butn:hover {
     background-color: var(--hover);
     border: 1px solid var(--cor-Principal);
