@@ -87,7 +87,7 @@ header > div.mobile {
         background: var(--fundo);
         color: var(--conteiners);
         border: 1px solid var(--bordas);
-        padding: 10px 2.4vw;
+        padding: 10px 15px;
         border-radius: 6px;
         cursor: pointer;
         z-index: 1000;
