@@ -30,11 +30,7 @@
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
     color: white;
     background-color: var(--fundo);
 }
@@ -367,6 +363,34 @@ main h3 {
     width: 100%;
     margin-top: 3vh;
     object-fit: contain;
+}
+
+div.carrousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 500px;
+    justify-items: stretch;
+    animation: animation 15s linear infinite;
+}
+
+
+
+@keyframes animation {
+    from {
+        transform: translateX(400px);
+    }
+    to {
+        transform: translateX(calc(-250px * 6));
+    }
+}
+
+section.conteiner_carrousel h2 {
+    font-family: var(--titulos);
+    font-weight: 800;
+    color: var(--cor-Principal);
+    font-size: 4vw;
+    text-align: center;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
 }
 
 /* Rodapé */
