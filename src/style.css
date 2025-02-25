@@ -387,7 +387,7 @@ section.conteiner_carrousel h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 10%);
-    width: 80%;
+    width: 65vw;
     overflow: hidden;
     position: relative;
     border: 6px solid var(--cor-Principal);
@@ -423,7 +423,7 @@ div.slide#primeiro {
     transition: background-color 300ms ease, transform 100ms ease;
     cursor: pointer;
     border-radius: 6px;
-    font-size: 18px;
+    font-size: 2vw;
 }
 
 .botao.anterior {
@@ -440,6 +440,31 @@ div.slide#primeiro {
 
 .botao:active {
     transform: scale(0.9);
+}
+
+@media (max-width: 800px) {
+    .botao {
+        padding: 2vw;
+    }
+
+    .slides {
+        height: 10vw;
+    }
+
+    .slide {
+        height: 20vw;
+        padding: 0 10px;
+    }
+
+    .carrossel {
+        height: 15vw;
+        padding: 0;
+        border: 3px solid var(--cor-Principal);
+    }
+
+    .botao {
+        top: 50%;
+    }
 }
 
 /* Rodapé */
