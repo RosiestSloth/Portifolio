@@ -37,7 +37,7 @@ html, body {
 
 /* Header */
 
-header h1{
+h1{
     font-family: var(--titulos);
     font-weight: 800;
 }
@@ -464,6 +464,67 @@ div.slide#primeiro {
 
     .botao {
         top: 50%;
+    }
+}
+
+/* Sobre mim */
+
+.aboutSecao-1 {
+    display: flex;
+    flex: 1;
+}
+
+.aboutDiv-1 {
+    padding: 20px;
+}
+
+.aboutDiv-1 p {
+    display: inline-block;
+    font-size: 1.4vw;
+}
+
+.aboutDiv-2 h1 {
+    font-size: 6vw;
+    color: var(--cor-Principal);
+}
+
+#subtitulo {
+    font-family: var(--chamadas);
+    display: inline-block;
+    bottom: 30px;
+    left: 10px;
+    position: relative;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.aboutDiv-2 p {
+    font-family: var(--corpo);
+    font-size: 1.8vw;
+    text-align: justify;
+    line-height: 1.5;
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .aboutSecao-1 {
+        flex-direction: column;
+    }    
+
+    .aboutDiv-1 p {
+        font-size: 4vw;
+    }
+
+    .aboutDiv-2 h1 {
+        font-size: 10vw;
+    }
+
+    .aboutDiv-2 p {
+        font-size: 3.5vw;
+    }
+
+    #subtitulo {
+        font-size: 3vw;
     }
 }
 
