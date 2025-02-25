@@ -365,17 +365,6 @@ main h3 {
     object-fit: contain;
 }
 
-
-
-@keyframes animation {
-    from {
-        transform: translateX(400px);
-    }
-    to {
-        transform: translateX(calc(-250px * 6));
-    }
-}
-
 section.conteiner_carrousel {
     position: relative;
     margin: auto;
@@ -421,22 +410,19 @@ div.slide#primeiro {
     min-width: 100%;
     box-sizing: border-box;
     color: white;
-    padding: 20px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 3vw;
 }
 
 .botao {
     position: absolute;
-    top: 60%;
-    background-color: rgba(0, 0, 0, 0.5);
+    top: 55%;
+    background-color: var(--cor-Principal);
     color: white;
-    border: none;
-    padding: 10px;
+    border: 1px solid white;
+    padding: 1.6vw;
+    transition: background-color 300ms ease, transform 100ms ease;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 6px;
     font-size: 18px;
 }
 
@@ -449,7 +435,11 @@ div.slide#primeiro {
 }
 
 .botao:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--hover);
+}
+
+.botao:active {
+    transform: scale(0.9);
 }
 
 /* Rodapé */
