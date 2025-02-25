@@ -365,14 +365,6 @@ main h3 {
     object-fit: contain;
 }
 
-div.carrousel {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 500px;
-    justify-items: stretch;
-    animation: animation 15s linear infinite;
-}
-
 
 
 @keyframes animation {
@@ -384,13 +376,80 @@ div.carrousel {
     }
 }
 
+section.conteiner_carrousel {
+    position: relative;
+    margin: auto;
+}
+
 section.conteiner_carrousel h2 {
     font-family: var(--titulos);
     font-weight: 800;
     color: var(--cor-Principal);
     font-size: 4vw;
+    position: relative;
     text-align: center;
     text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.372);
+}
+
+/*Carrossel primeira página*/
+
+.carrossel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    border: 6px solid var(--cor-Principal);
+    border-radius: 10px
+    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 15vw;
+    
+}
+
+div.slide#primeiro {
+    background: url('/images/imgs/Communication.png') no-repeat center right/cover;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    color: white;
+    padding: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao {
+    position: absolute;
+    top: 60%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.botao.anterior {
+    left:10px;
+}
+
+.botao.proximo {
+    right: 10px;
+}
+
+.botao:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Rodapé */

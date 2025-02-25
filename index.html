@@ -78,23 +78,19 @@
                     Soft Skills
                 </h2>
 
-                <div class="carrousel">
-                    <div id="carrousel-1">
-                        <p>
-                            <strong>Comunicação:</strong> Comunicação eficaz e clara, tanto com equipes quanto com clientes, garantindo que as ideias sejam bem compreendidas.
-                        </p>
+                <div class="carrossel">
+                    <div class="slides">
+                        <div class="slide" id="primeiro">
+                            <p>
+                                <strong>Comunicação:</strong> Comunicação eficaz e clara, tanto com equipes quanto com clientes, garantindo que as ideias sejam bem compreendidas.
+                            </p>
                     </div>
-                    <div id="carrousel-2">
-                        <p>
-                            <strong>Comunicação:</strong> Comunicação eficaz e clara, tanto com equipes quanto com clientes, garantindo que as ideias sejam bem compreendidas.
-                        </p>
-                    </div>
-                    <div id="carrousel-3">
-                        <p>
-                            <strong>Comunicação:</strong> Comunicação eficaz e clara, tanto com equipes quanto com clientes, garantindo que as ideias sejam bem compreendidas.
-                        </p>
+                        <div class="slide" style="background-color: #00ccff;">Slide 2</div>
+                        <div class="slide" style="background-color: #ff6666;">Slide 3</div>
                     </div>
                 </div>
+                <button class="botao anterior" onclick="mudarSlide(-1)">&#10094;</button>
+                <button class="botao proximo" onclick="mudarSlide(1)">&#10095;</button>
             </section>
         </article>
     </main>
@@ -126,13 +122,4 @@
 </body>
 </html>
 
-<script>
-    const toggleButton = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    
-    toggleButton.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    toggleButton.classList.toggle('ativo');
-});
-
-</script>
+<script src="/src/script.js"></script>
