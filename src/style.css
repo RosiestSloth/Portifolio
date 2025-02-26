@@ -221,6 +221,7 @@ nav {
     background-color: var(--conteiners);
     border-radius: 6px;
     padding: 3px;
+    margin: 1vw;
 }
 
 nav a {
@@ -368,6 +369,7 @@ main h3 {
 section.conteiner_carrousel {
     position: relative;
     margin: auto;
+    margin-bottom: 5vh;
 }
 
 section.conteiner_carrousel h2 {
@@ -476,6 +478,10 @@ div.slide#primeiro {
 
 .aboutDiv-1 {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
 .aboutDiv-1 p {
@@ -484,31 +490,89 @@ div.slide#primeiro {
 }
 
 .aboutDiv-2 h1 {
-    font-size: 6vw;
+    font-size: 6.5vw;
     color: var(--cor-Principal);
+}
+
+.aboutDiv-2 nav {
+    display: flex;
+    position: relative;
+    top: -30px;
+    padding: 0;
+}
+
+.aboutDiv-2 nav ul {
+    display: flex;
+    gap: 10px;
+    position: absolute;
 }
 
 #subtitulo {
     font-family: var(--chamadas);
     display: inline-block;
     bottom: 30px;
-    left: 10px;
     position: relative;
-    font-size: 2vw;
+    font-size: 2.3vw;
     font-weight: 700;
 }
 
 .aboutDiv-2 p {
     font-family: var(--corpo);
-    font-size: 1.8vw;
+    font-size: 2vw;
     text-align: justify;
     line-height: 1.5;
     color: white;
 }
 
+.aboutDiv-2 nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutDiv-2 nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    border-radius: 6px;
+    border: 1px solid var(--bordas);
+    padding: 0.5vw 0;
+    gap: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-family: var(--chamadas);
+    font-weight: 700;
+    transition: background-color 300ms ease, transform 100ms ease;
+}
+
+.aboutDiv-2 nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.aboutDiv-2 nav ul li a:active {
+    transform: scale(0.9);
+}
+
+.aboutDiv-2 nav ul li a img {
+    width: 3vw;
+}
+
+.aboutDiv-2 > p#texto {
+    display: block;
+    margin-top: 3vw;
+} 
+
+
 @media (max-width: 800px) {
     .aboutSecao-1 {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }    
 
     .aboutDiv-1 p {
@@ -525,6 +589,15 @@ div.slide#primeiro {
 
     #subtitulo {
         font-size: 3vw;
+    }
+
+    .aboutDiv-2 nav ul li a {
+        width: 28vw;
+        font-size: 3.5vw;
+    }
+
+    .aboutDiv-2 nav ul li a img {
+        width: 6vw;
     }
 }
 
