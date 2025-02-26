@@ -2,12 +2,10 @@ const toggleButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
 toggleButton.addEventListener('click', () => {
-menu.classList.toggle('open');
-toggleButton.classList.toggle('ativo');
+    menu.classList.toggle('open');
+    toggleButton.classList.toggle('ativo');
 });
 
-
-// script.js
 let slideIndex = 0;
 
 function mostrarSlide(index) {
@@ -34,3 +32,4 @@ function mudarSlide(direcao) {
 
 // Inicializa o carrossel com o primeiro slide
 mostrarSlide(slideIndex);
+

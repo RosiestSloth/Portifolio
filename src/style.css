@@ -29,15 +29,17 @@
     margin: 0;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
+    max-width: 100vw;
     color: white;
     background-color: var(--fundo);
 }
 
 /* Header */
 
-h1{
+h1 {
     font-family: var(--titulos);
     font-weight: 800;
 }
@@ -45,42 +47,43 @@ h1{
 header {
     display: flex;
     align-items: center;
-    justify-content: start; 
+    justify-content: start;
     position: relative;
     padding: 25px;
     height: 60px;
     background-color: var(--cor-Principal);
 }
 
-header > div.desktop {
+header>div.desktop {
     display: flex;
     align-items: center;
     width: 100%;
 }
 
-header > div.mobile {
+header>div.mobile {
     display: none;
 }
 
 /* Mobile */
 
 @media (max-width: 800px) {
-    header > div.desktop {
+    header>div.desktop {
         display: none;
     }
 
     header {
         height: 4vh;
+        bottom: 10px;
     }
 
-    header > div.mobile {
+    header>div.mobile {
         display: block;
     }
 
     .menu-toggle {
         position: absolute;
-        top: 1vh;
-        left: 15px;
+        top: 15px;
+        left: 10x;
         background: var(--fundo);
         color: var(--conteiners);
         border: 1px solid var(--bordas);
@@ -118,6 +121,7 @@ header > div.mobile {
         top: -100vh;
         width: 100%;
         height: 50px;
+        left: 48vw;
         background: var(--conteiners);
         color: white;
         padding-top: 80px;
@@ -147,7 +151,7 @@ header > div.mobile {
 
     main {
         padding: 20px !important;
-        margin-top: 10px !important; 
+        margin-top: 10px !important;
     }
 
     main article section#secao-1 {
@@ -155,21 +159,21 @@ header > div.mobile {
         border-bottom: 1px solid rgba(255, 255, 255, 0.50);
         margin-bottom: 3vh;
     }
-    
+
     main article section#secao-1 h2 {
         font-size: 6vw !important;
     }
-    
+
     main article section#secao-1 p {
         font-size: 2.6vw !important;
         text-align: justify;
     }
-    
+
     main article section#secao-1 p strong {
         font-weight: 800;
         color: var(--cor-Principal);
     }
-    
+
     main article section#secao-1 p#saiba-mais {
         font-family: var(--corpo);
         font-size: 2vw !important;
@@ -208,7 +212,7 @@ header > div.mobile {
     footer div#links a {
         font-size: 3vw !important;
     }
-    
+
 }
 
 /* Navegação Principal */
@@ -336,6 +340,7 @@ main article section#secao-1 a.butn {
     transition: color 200ms;
     transition: background 200ms;
 }
+
 main article section#secao-1 a.butn:hover {
     background-color: var(--hover);
     border: 1px solid var(--cor-Principal);
@@ -394,14 +399,13 @@ section.conteiner_carrousel h2 {
     position: relative;
     border: 6px solid var(--cor-Principal);
     border-radius: 10px
-    
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 15vw;
-    
+
 }
 
 div.slide#primeiro {
@@ -429,7 +433,7 @@ div.slide#primeiro {
 }
 
 .botao.anterior {
-    left:1vw;
+    left: 1vw;
 }
 
 .botao.proximo {
@@ -562,10 +566,10 @@ div.slide#primeiro {
     width: 3vw;
 }
 
-.aboutDiv-2 > p#texto {
+.aboutDiv-2>p#texto {
     display: block;
     margin-top: 3vw;
-} 
+}
 
 
 @media (max-width: 800px) {
@@ -573,7 +577,7 @@ div.slide#primeiro {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }    
+    }
 
     .aboutDiv-1 p {
         font-size: 4vw;
@@ -599,6 +603,34 @@ div.slide#primeiro {
     .aboutDiv-2 nav ul li a img {
         width: 6vw;
     }
+}
+
+/* Mosaico de fotos */
+
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.mosaic a {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mosaic a:hover {
+    transform: scale(1.05);
+}
+
+.mosaic img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
 /* Rodapé */
@@ -652,8 +684,8 @@ footer div#segundo a:hover {
     color: rgba(255, 255, 255, 0.67);
 }
 
-footer #titulo, footer #redes {
+footer #titulo,
+footer #redes {
     text-align: center;
     width: 250px;
 }
-

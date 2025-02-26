@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../src/style.css">
     <script src="./src/script.js"></script>
 </head>
+
 <body>
     <header>
         <div class="desktop">
@@ -15,13 +17,18 @@
             </h1>
             <nav aria-label="Navegação Desktop">
                 <a href="/index.html"><img src="/images/svgs/Home.svg" alt=""> Home</a>
-                <a class="ativo" href="/pages/About.html" id="borda"><img src="/images/svgs/About.svg" width="30" height="30" alt="About"> Sobre</a>
-                <a href="/pages/Works.html" id="borda"><img src="/images/svgs/Works.svg" width="30" height="30" alt="Works"> Trabalhos</a>
-                <a href="/pages/Photos.html" id="borda"><img src="/images/svgs/Photos.svg" width="30" height="30" alt="Foto"> Fotos</a>
+                <a class="ativo" href="/pages/About.html" id="borda"><img src="/images/svgs/About.svg" width="30"
+                        height="30" alt="About"> Sobre</a>
+                <a href="/pages/Works.html" id="borda"><img src="/images/svgs/Works.svg" width="30" height="30"
+                        alt="Works"> Trabalhos</a>
+                <a href="/pages/Photos.html" id="borda"><img src="/images/svgs/Photos.svg" width="30" height="30"
+                        alt="Foto"> Fotos</a>
             </nav>
         </div>
         <div class="mobile">
-            <button class="menu-toggle"><p>☰</p></button>
+            <button class="menu-toggle">
+                <p>☰</p>
+            </button>
             <nav class="menu" aria-label="Navegação Mobile">
                 <a href="/index.html"> Home</a>
                 <a class="ativo" href="/pages/About.html" id="borda"> Sobre</a>
@@ -60,24 +67,29 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/vinicius___santos1?igsh=cHlrMGN0cWthZXAy&utm_source=qr" target="_blank"><img src="/images/svgs/Instagram.svg" alt="Instagram ViniciusSantos"> Instagram</a>
+                                <a href="https://www.instagram.com/vinicius___santos1?igsh=cHlrMGN0cWthZXAy&utm_source=qr"
+                                    target="_blank"><img src="/images/svgs/Instagram.svg"
+                                        alt="Instagram ViniciusSantos"> Instagram</a>
                             </li>
                         </ul>
                     </nav>
-                    
-                        
+
+
                     <p id="texto">
-                        Meu nome é Vinicius e sou um desenvolvedor de Anápolis, apaixonado por simplificar desafios complexos em soluções eficientes e intuitivas. Meu trabalho abrange aplicações web, experiências interativas e a combinação entre tecnologia e design focado no usuário.
+                        Meu nome é Vinicius e sou um desenvolvedor de Anápolis, apaixonado por simplificar desafios
+                        complexos em soluções eficientes e intuitivas. Meu trabalho abrange aplicações web, experiências
+                        interativas e a combinação entre tecnologia e design focado no usuário.
                     </p>
                 </div>
-                
+
             </section>
         </article>
     </main>
     <footer>
         <div id="primeiro">
             <p>
-                Desenvolvido por <a href="https://github.com/RosiestSloth" target="_blank">Vinicius</a> | &copy; Todos os direitos reservados
+                Desenvolvido por <a href="https://github.com/RosiestSloth" target="_blank">Vinicius</a> | &copy; Todos
+                os direitos reservados
             </p>
         </div>
         <div id="segundo">
@@ -92,25 +104,30 @@
             </div>
 
             <div id="redes">
-                <a href="https://www.tiktok.com/@vinicius___santos329?lang=pt-BR" target="_blank"><img src="/images/svgs/TikTok.svg" width="35" height="35" alt="TikTok"></a>
-                <a href="https://api.whatsapp.com/send/?phone=%2B5562992846807&text&type=phone_number&app_absent=0" target="_blank"><img src="/images/svgs/WhatsApp.svg" width="35" height="35" alt="WhatsApp"></a>
-                <a href="https://www.instagram.com/vinicius___santos1?igsh=cHlrMGN0cWthZXAy&utm_source=qr" target="_blank"><img src="/images/svgs/Instagram.svg" width="35" height="35" alt="Instagram"></a>
-                <a href="https://github.com/RosiestSloth" target="_blank"><img src="/images/svgs/GitHub.svg" width="35" height="35" alt="GitHub"></a>
+                <a href="https://www.tiktok.com/@vinicius___santos329?lang=pt-BR" target="_blank"><img
+                        src="/images/svgs/TikTok.svg" width="35" height="35" alt="TikTok"></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B5562992846807&text&type=phone_number&app_absent=0"
+                    target="_blank"><img src="/images/svgs/WhatsApp.svg" width="35" height="35" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/vinicius___santos1?igsh=cHlrMGN0cWthZXAy&utm_source=qr"
+                    target="_blank"><img src="/images/svgs/Instagram.svg" width="35" height="35" alt="Instagram"></a>
+                <a href="https://github.com/RosiestSloth" target="_blank"><img src="/images/svgs/GitHub.svg" width="35"
+                        height="35" alt="GitHub"></a>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
 
 <script>
     const toggleButton = document.querySelector('.menu-toggle');
     const menu = document.querySelector('.menu');
-    
+
     toggleButton.addEventListener('click', () => {
         menu.classList.toggle('open');
     });
 
     document.querySelector(".menu-toggle").addEventListener("click", function () {
-    this.classList.toggle("ativo");
+        this.classList.toggle("ativo");
     });
 </script>
