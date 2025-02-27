@@ -44,6 +44,11 @@ h1 {
     font-weight: 800;
 }
 
+h2 {
+    font-family: var(--titulos);
+    font-weight: 700;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -571,6 +576,68 @@ div.slide#primeiro {
     margin-top: 3vw;
 }
 
+article section.aboutSecao-2 {
+    margin-top: 3vw;
+    padding-top: 20px;
+}
+
+article section.aboutSecao-2 h2 {
+    font-size: 5vw;
+    text-align: center;
+    color: var(--cor-Principal);
+}
+
+article section.aboutSecao-2 h3 {
+    font-size: 3vw;
+    margin-top: 15px;
+    text-align: left;
+    color: var(--cor-Principal);
+    margin-bottom: 2vw;
+}
+
+article section.aboutSecao-2 p {
+    font-size: 2vw;
+    text-align: justify;
+    line-height: 1.5;
+    color: white;
+}
+
+article section.aboutSecao-2 a {
+    color: white;
+    text-decoration: none;
+    transition: color 100ms ease;
+    font-weight: 800;
+}
+
+article section.aboutSecao-2 a:hover {
+    color: var(--cor-Principal);
+}
+
+article section.aboutSecao-2 button {
+    background-color: var(--cor-Principal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: background-color 300ms ease, transform 100ms ease, border 300ms ease;
+    margin-top: 1vw;
+    font-family: var(--chamadas);
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+
+article section.aboutSecao-2 button:hover {
+    background-color: white;
+    color: var(--cor-Principal);
+    border: 1px solid var(--cor-Principal);
+}
+
+article section.aboutSecao-2 button:active {
+    transform: scale(0.9);
+}
 
 @media (max-width: 800px) {
     .aboutSecao-1 {
