@@ -639,7 +639,8 @@ article section.aboutSecao-2 button:active {
     transform: scale(0.9);
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 1200px) {
     .aboutSecao-1 {
         flex-direction: column;
         justify-content: center;
@@ -647,28 +648,43 @@ article section.aboutSecao-2 button:active {
     }
 
     .aboutDiv-1 p {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .aboutDiv-2 h1 {
         font-size: 10vw;
+        padding-bottom: 10px;
+        text-align: center;
     }
 
     .aboutDiv-2 p {
-        font-size: 3.5vw;
+        font-size: 3vw;
+        padding: 3vw 0px;
     }
 
     #subtitulo {
         font-size: 3vw;
+        text-align: center;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .aboutDiv-2 nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vw;
+        background-color: transparent;
     }
 
     .aboutDiv-2 nav ul li a {
-        width: 28vw;
-        font-size: 3.5vw;
+        width: 25vw;
+        font-size: 3vw;
     }
 
     .aboutDiv-2 nav ul li a img {
-        width: 6vw;
+        width: 4vw;
     }
 }
 

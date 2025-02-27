@@ -1,18 +1,23 @@
 const toggleButton = document.querySelector('.menu-toggle');
 const menu = document.querySelector('.menu');
 
-toggleButton.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    toggleButton.classList.toggle('ativo');
-});
+if (toggleButton && menu) {
+    toggleButton.addEventListener('click', () => {
+        menu.classList.toggle('open');
+        toggleButton.classList.toggle('ativo');
+    });
+}
+
 
 let slideIndex = 0;
 
 function mostrarSlide(index) {
     const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
+    const slidesContainer = document.querySelector('.slides');
+    if (slides.length === 0 || !slidesContainer) return;
 
-    // Ajusta o índice para permitir navegação infinita
+    const totalSlides = slides.length;
+    
     if (index >= totalSlides) {
         slideIndex = 0;
     } else if (index < 0) {
@@ -21,10 +26,10 @@ function mostrarSlide(index) {
         slideIndex = index;
     }
 
-    // Move os slides
     const offset = -slideIndex * 100;
-    document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+    slidesContainer.style.transform = `translateX(${offset}%)`;
 }
+
 
 function mudarSlide(direcao) {
     mostrarSlide(slideIndex + direcao);

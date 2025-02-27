@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhos</title>
     <link rel="stylesheet" href="../src/style.css">
-    <script src="./src/script.js"></script>
+    <script src="../src/script.js" defer></script>
 </head>
 
 <body>
@@ -77,16 +77,3 @@
 </body>
 
 </html>
-
-<script>
-    const toggleButton = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-
-    toggleButton.addEventListener('click', () => {
-        menu.classList.toggle('open');
-    });
-
-    document.querySelector(".menu-toggle").addEventListener("click", function () {
-        this.classList.toggle("ativo");
-    });
-</script>
