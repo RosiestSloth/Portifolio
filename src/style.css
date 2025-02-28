@@ -462,13 +462,18 @@ div.slide#primeiro {
         height: 20vw;
     }
 
+    .slides p {
+        font-size: 3vw;
+    }
+
     .slide {
         height: 30vw;
         padding: 0 10px;
     }
 
     .carrossel {
-        height: 15vw;
+        height: 20vw;
+        width: 75%;
         padding: 0;
         border: 3px solid var(--cor-Principal);
     }
