@@ -726,27 +726,23 @@ ul li {
 .mosaic {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
+    gap: 20px;
 }
 
-.mosaic a {
+.mosaic button {
     display: block;
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-
-.mosaic a:hover {
-    transform: scale(1.05);
+    border: 2px solid white;
+    cursor: pointer;
 }
 
 .mosaic img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
+    object-fit: cover;
 }
 
 /* Rodapé */
