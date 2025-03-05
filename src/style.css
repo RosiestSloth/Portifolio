@@ -170,7 +170,7 @@ header>div.mobile {
     }
 
     main article section#secao-1 p {
-        font-size: 2.6vw !important;
+        font-size: 3vw !important;
         text-align: justify;
     }
 
@@ -215,9 +215,8 @@ header>div.mobile {
     }
 
     footer div#links a {
-        font-size: 3vw !important;
+        font-size: 4vw !important;
     }
-
 }
 
 /* Navegação Principal */
@@ -454,6 +453,15 @@ div.slide#primeiro {
 }
 
 @media (max-width: 800px) {
+
+    #secao-2 p {
+        font-size: 3vw;
+    }
+
+    #secao-2 h3 {
+        font-size: 4.7vw;
+    }
+
     .botao {
         padding: 3vw;
     }
@@ -706,8 +714,16 @@ ul li {
 }
 
 @media (max-width: 800px) {
+    .aboutSecao-2 p {
+        font-size: 3vw !important;
+    }
+
+    .aboutSecao-2 button {
+        font-size: 2.4vw !important;
+    }
+
     ul li {
-        font-size: 2.6vw;
+        font-size: 3vw;
         padding-bottom: 10px;
     }
 
@@ -716,7 +732,7 @@ ul li {
     }
     
     article section.aboutSecao-2 h3, article section.aboutSecao-3 h3 {
-        font-size: 4.5vw;
+        font-size: 5vw;
         margin-bottom: 3vw;
     }
 }
