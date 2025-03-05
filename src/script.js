@@ -38,48 +38,104 @@ function mudarSlide(direcao) {
 // Inicializa o carrossel com o primeiro slide
 mostrarSlide(slideIndex);
 
-    // Organizar fotos no mosaico
-    document.addEventListener("DOMContentLoaded", function () {
-        const mosaic = document.querySelector(".mosaic");
-        const images = document.querySelectorAll(".mosaic img");
+function clicouSlide(event) {
+    let imagem = event.target; // A imagem que foi clicada
+    let botao = event.currentTarget; // O botão que foi clicado
 
-        // Função para ajustar o layout
-        function adjustLayout() {
-            const containerWidth = mosaic.offsetWidth; // Largura do contêiner pai
-            const containerHeight = mosaic.offsetHeight; // Altura do contêiner pai
-            const gap = 10; // Espaçamento entre os itens
-            const columns = Math.floor(containerWidth / 200); // Número de colunas baseado na largura do contêiner
-            const columnWidth = (containerWidth - (gap * (columns - 1))) / columns; // Largura de cada coluna
-            const heights = new Array(columns).fill(0); // Array para armazenar as alturas das colunas
+    // Verifica se a imagem já foi ampliada (para evitar redimensionamentos múltiplos)
+    if (imagem.style.width === '50vw') return;
 
-            // Resetar o layout
-            mosaic.style.position = "relative";
-            images.forEach((img) => {
-                const aspectRatio = img.naturalWidth / img.naturalHeight; // Proporção da imagem
-                const width = columnWidth; // Largura da coluna
-                const height = width / aspectRatio; // Altura calculada com base na proporção
+    // Aplica as transformações para maximizar a imagem
+    imagem.style.width = '80vw';
+    imagem.style.height = '80vh';
+    imagem.style.position = 'fixed';
+    imagem.style.top = '50%';
+    imagem.style.left = '50%';
+    imagem.style.transform = 'translate(-50%, -50%)';
+    imagem.style.zIndex = '9999';
+    imagem.style.transition = 'width 0.5s ease, height 0.5s ease';
+    imagem.style.objectFit = 'contain';
 
-                // Definir o tamanho do contêiner da imagem
-                img.parentElement.style.position = "absolute";
-                img.parentElement.style.width = `${width}px`;
-                img.parentElement.style.height = `${height}px`;
-
-                // Posicionar a imagem
-                const minHeight = Math.min(...heights); // Menor altura atual
-                const columnIndex = heights.indexOf(minHeight); // Índice da coluna com menor altura
-
-                img.parentElement.style.top = `${minHeight}px`;
-                img.parentElement.style.left = `${columnIndex * (columnWidth + gap)}px`;
-
-                // Atualizar a altura da coluna
-                heights[columnIndex] += height + gap;
-            });
-
-            // Ajustar a altura do contêiner principal para cobrir o conteúdo
-            mosaic.style.height = `${Math.max(...heights)}px`;
-        }
-
-        // Ajustar o layout ao carregar a página e ao redimensionar a janela
-        window.addEventListener("load", adjustLayout);
-        window.addEventListener("resize", adjustLayout);
+    // Desabilita o pointerEvents de todos os botões
+    document.querySelectorAll('.botaoMosaico').forEach((button) => {
+        button.style.pointerEvents = 'none';
     });
+
+    // Adiciona o evento de clique fora da imagem para restaurar
+    const clickOutsideListener = function(event) {
+        if (!imagem.contains(event.target)) { // Verifica se o clique foi fora da imagem
+            restaurarImagem(imagem);
+            document.removeEventListener('click', clickOutsideListener); // Remove o listener após o clique fora
+        }
+    };
+
+    // Registra o evento de clique fora
+    document.addEventListener('click', clickOutsideListener);
+}
+
+function restaurarImagem(imagem) {
+    // Restaura o tamanho e a posição da imagem para o estado original
+    imagem.style.width = '100%';
+    imagem.style.height = '100%';
+    imagem.style.position = '';
+    imagem.style.top = '';
+    imagem.style.left = '';
+    imagem.style.zIndex = '';
+    imagem.style.transition = 'width 0.5s ease, height 0.5s ease';
+    imagem.style.transform = '';
+    imagem.style.objectFit = '';
+
+    // Habilita novamente os pointerEvents para todos os botões
+    document.querySelectorAll('.botaoMosaico').forEach((button) => {
+        button.style.pointerEvents = 'auto';
+    });
+}
+
+// Organizar as imagens no layout de mosaico
+document.addEventListener("DOMContentLoaded", function () {
+    const mosaic = document.querySelector(".mosaic");  // Seleciona o contêiner do mosaico
+    const buttons = document.querySelectorAll(".mosaic button");  // Seleciona todos os botões dentro do mosaico
+
+    // Função para ajustar o layout do mosaico
+    function adjustLayout() {
+        const containerWidth = mosaic.offsetWidth; // Largura do contêiner principal
+        const gap = 10; // Espaçamento entre as imagens
+        const columns = Math.floor(containerWidth / 200); // Calcula o número de colunas baseado na largura do contêiner
+        const columnWidth = (containerWidth - (gap * (columns - 1))) / columns; // Largura de cada coluna
+        const heights = new Array(columns).fill(0); // Cria um array para armazenar as alturas das colunas
+
+        // Reseta o layout antes de calcular novamente
+        mosaic.style.position = "relative";
+
+        buttons.forEach((button) => {
+            const img = button.querySelector("img");  // Seleciona a imagem dentro de cada botão
+            const aspectRatio = img.naturalWidth / img.naturalHeight; // Calcula a proporção da imagem
+            const width = columnWidth; // A largura de cada coluna
+            const height = width / aspectRatio; // A altura calculada com base na proporção
+
+            // Define o tamanho do contêiner da imagem
+            button.style.position = "absolute";
+            button.style.width = `${width}px`;
+            button.style.height = `${height}px`;
+
+            // Encontrar a coluna com a menor altura para posicionar a imagem
+            const minHeight = Math.min(...heights);
+            const columnIndex = heights.indexOf(minHeight); // Índice da coluna com menor altura
+
+            // Posiciona o botão na coluna correta
+            button.style.top = `${minHeight}px`;
+            button.style.left = `${columnIndex * (columnWidth + gap)}px`;
+
+            // Atualiza a altura da coluna para refletir a nova imagem
+            heights[columnIndex] += height + gap;
+        });
+
+        // Ajusta a altura do contêiner para cobrir o conteúdo
+        mosaic.style.height = `${Math.max(...heights)}px`;
+    }
+
+    // Chama a função de ajuste de layout ao carregar a página
+    window.addEventListener("load", adjustLayout);
+    // Chama a função de ajuste de layout quando a janela for redimensionada
+    window.addEventListener("resize", adjustLayout);
+});
