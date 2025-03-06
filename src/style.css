@@ -594,13 +594,13 @@ article section.aboutSecao-2 {
     padding-top: 20px;
 }
 
-article section.aboutSecao-2 h2, article section.aboutSecao-3 h2 {
+article section.aboutSecao-2 h2, article section.aboutSecao-3 h2, article section.aboutSecao-4 h2 {
     font-size: 5vw;
     text-align: center;
     color: var(--cor-Principal);
 }
 
-article section.aboutSecao-2 h3, article section.aboutSecao-3 h3 {
+article section.aboutSecao-2 h3, article section.aboutSecao-3 h3, article section.aboutSecao-4 h3 {
     font-size: 3vw;
     margin-top: 15px;
     text-align: left;
@@ -652,6 +652,35 @@ article section.aboutSecao-2 button:active {
     transform: scale(0.9);
 }
 
+#Butn_Certificados {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-family: var(--chamadas);
+    padding: 0.7vw;
+    padding-left: 3vw;
+    vertical-align: middle;
+    border-radius: 6px;
+    position: relative;
+    transition: background-color 300ms ease, transform 200ms ease;
+    margin-left: 2vw;
+    font-weight: 700;
+}
+
+#Butn_Certificados svg {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+}
+
+#Butn_Certificados:active {
+    transform: scale(0.9);
+}
+
+
+#Butn_Certificados:hover {
+    background-color: rgba(255, 255, 255, 0.63);
+}
 
 @media (max-width: 1200px) {
     .aboutSecao-1 {
