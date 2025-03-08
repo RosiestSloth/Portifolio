@@ -657,6 +657,7 @@ article section.aboutSecao-2 button:active {
     background-color: white;
     color: black;
     font-family: var(--chamadas);
+    font-size: 1.5vw;
     padding: 0.7vw;
     padding-left: 3vw;
     vertical-align: middle;
