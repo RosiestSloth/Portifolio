@@ -39,16 +39,23 @@ body {
 
 /* Header */
 
-h1 {
+h1, h2, h3 {
     font-family: var(--titulos);
+    color: var(--cor-Principal);
+}
+
+h1 {
     font-weight: 800;
 }
 
 h2 {
-    font-family: var(--titulos);
     font-weight: 700;
 }
 
+h3 {
+    font-weight: 800;
+    font-size: 4vw;
+}
 header {
     display: flex;
     align-items: center;
@@ -159,33 +166,33 @@ header>div.mobile {
         margin-top: 10px !important;
     }
 
-    main article section#secao-1 {
+    #secao-1 {
         padding-bottom: 3vh !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.50);
         margin-bottom: 3vh;
     }
 
-    main article section#secao-1 h2 {
+    #secao-1 h2 {
         font-size: 6vw !important;
     }
 
-    main article section#secao-1 p {
+    #secao-1 p {
         font-size: 3vw !important;
         text-align: justify;
     }
 
-    main article section#secao-1 p strong {
+    #secao-1 p strong {
         font-weight: 800;
         color: var(--cor-Principal);
     }
 
-    main article section#secao-1 p#saiba-mais {
+    #secao-1 p#saiba-mais {
         font-family: var(--corpo);
         font-size: 2vw !important;
         font-weight: 700;
     }
 
-    main article section#secao-1 a.butn {
+    #secao-1 a.butn {
         font-size: 2.3vw !important;
         width: 25vw !important;
         padding: 2px 5px !important;
@@ -294,13 +301,13 @@ main {
     margin-top: 4vh;
 }
 
-main article section#secao-1 {
+#secao-1 {
     padding-bottom: 5vh;
     border-bottom: 1px solid rgba(255, 255, 255, 0.50);
     margin-bottom: 3vh;
 }
 
-main article section#secao-1 h2 {
+#secao-1 h2 {
     font-family: var(--titulos);
     font-weight: 800;
     color: var(--cor-Principal);
@@ -320,13 +327,13 @@ main strong {
     color: var(--cor-Principal);
 }
 
-main article section#secao-1 p#saiba-mais {
+#secao-1 p#saiba-mais {
     font-family: var(--corpo);
     font-size: 1.2vw;
     font-weight: 700;
 }
 
-main article section#secao-1 a.butn {
+#secao-1 a.butn {
     text-decoration: none;
     background-color: var(--cor-Principal);
     color: white;
@@ -345,13 +352,13 @@ main article section#secao-1 a.butn {
     transition: background 200ms;
 }
 
-main article section#secao-1 a.butn:hover {
+#secao-1 a.butn:hover {
     background-color: var(--hover);
     border: 1px solid var(--cor-Principal);
     color: rgba(255, 255, 255, 0.835);
 }
 
-main article section#secao-1 div.foto-1 {
+#secao-1 div.foto-1 {
     width: 100%;
     height: 25vw;
     background-color: var(--conteiners);
@@ -496,6 +503,7 @@ div.slide#primeiro {
 .aboutSecao-1 {
     display: flex;
     flex: 1;
+    margin-bottom: 3vh;
 }
 
 .aboutDiv-1 {
@@ -589,18 +597,18 @@ div.slide#primeiro {
     margin-top: 3vw;
 }
 
-article section.aboutSecao-2 {
+.aboutSecao-2 {
     margin-top: 3vw;
     padding-top: 20px;
 }
 
-article section.aboutSecao-2 h2, article section.aboutSecao-3 h2, article section.aboutSecao-4 h2 {
+.aboutSecao-2 h2, .aboutSecao-3 h2, .aboutSecao-4 h2 {
     font-size: 5vw;
     text-align: center;
     color: var(--cor-Principal);
 }
 
-article section.aboutSecao-2 h3, article section.aboutSecao-3 h3, article section.aboutSecao-4 h3 {
+.aboutSecao-2 h3, .aboutSecao-3 h3, .aboutSecao-4 h3 {
     font-size: 3vw;
     margin-top: 15px;
     text-align: left;
@@ -608,25 +616,25 @@ article section.aboutSecao-2 h3, article section.aboutSecao-3 h3, article sectio
     margin-bottom: 2vw;
 }
 
-article section.aboutSecao-2 p {
+.aboutSecao-2 p {
     font-size: 2vw;
     text-align: justify;
     line-height: 1.5;
     color: white;
 }
 
-article section.aboutSecao-2 a {
+.aboutSecao-2 a {
     color: white;
     text-decoration: none;
     transition: color 100ms ease;
     font-weight: 800;
 }
 
-article section.aboutSecao-2 a:hover {
+.aboutSecao-2 a:hover {
     color: var(--cor-Principal);
 }
 
-article section.aboutSecao-2 button {
+.aboutSecao-2 button {
     background-color: var(--cor-Principal);
     color: white;
     border: none;
@@ -642,13 +650,13 @@ article section.aboutSecao-2 button {
     margin-bottom: 1vw;
 }
 
-article section.aboutSecao-2 button:hover {
+.aboutSecao-2 button:hover {
     background-color: white;
     color: var(--cor-Principal);
     border: 1px solid var(--cor-Principal);
 }
 
-article section.aboutSecao-2 button:active {
+.aboutSecao-2 button:active {
     transform: scale(0.9);
 }
 
@@ -683,7 +691,7 @@ article section.aboutSecao-2 button:active {
     background-color: rgba(255, 255, 255, 0.63);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1050px) {
     .aboutSecao-1 {
         flex-direction: column;
         justify-content: center;
@@ -757,11 +765,11 @@ ul li {
         padding-bottom: 10px;
     }
 
-    article section.aboutSecao-2 h2, article section.aboutSecao-3 h2 {
+    .aboutSecao-2 h2, .aboutSecao-3 h2 {
         font-size: 7vw;
     }
     
-    article section.aboutSecao-2 h3, article section.aboutSecao-3 h3 {
+    .aboutSecao-2 h3, .aboutSecao-3 h3 {
         font-size: 5vw;
         margin-bottom: 3vw;
     }

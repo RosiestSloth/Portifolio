@@ -1,0 +1,42 @@
+@charset 'UTF-8';
+
+:root {
+    --fundo: #101920;
+    --cor-Principal: #608BDA;
+    --bordas: #7AA0E7;
+    --conteiners: #98BCFF;
+    --hover: #43639D;
+    --titulos: "Montserrat", serif;
+    --corpo: "Roboto", sans-serif;
+    --chamadas: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: color 100ms ease;
+}
+
+a:hover {
+    color: var(--cor-Principal);
+
+}
+
+.CV_img {
+    width: 100%;
+    border: 4px solid var(--bordas);
+    border-radius: 6px;
+}
+
+.CV_img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    height: 100%;
+}
