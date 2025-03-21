@@ -54,7 +54,6 @@ h2 {
 
 h3 {
     font-weight: 800;
-    font-size: 4vw;
 }
 header {
     display: flex;
@@ -200,29 +199,6 @@ header>div.mobile {
 
     #sobre {
         width: 7vw !important;
-    }
-
-    footer div#primeiro p {
-        font-size: 3.2vw;
-    }
-
-    footer div#titulo {
-        width: auto;
-    }
-
-    footer div#segundo {
-        flex-direction: column;
-        align-items: center;
-        row-gap: 1vh;
-        padding: 5vw;
-    }
-
-    footer div#segundo h1 {
-        font-size: 6vw;
-    }
-
-    footer div#links a {
-        font-size: 4vw !important;
     }
 }
 
@@ -834,6 +810,7 @@ footer h1 {
     font-size: 3vw;
     font-weight: 700;
     width: 150px;
+    color: white;
 }
 
 footer div#segundo a {
@@ -854,4 +831,30 @@ footer #titulo,
 footer #redes {
     text-align: center;
     width: 250px;
+}
+
+@media (max-width: 800px) {
+    
+    footer div#primeiro p {
+        font-size: 3vw;
+    }
+
+    footer div#titulo {
+        width: auto;
+    }
+
+    footer div#segundo {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1vh;
+        padding: 5vw;
+    }
+
+    footer div#segundo h1 {
+        font-size: 6vw;
+    }
+
+    footer div#links a {
+        font-size: 4vw !important;
+    }
 }
