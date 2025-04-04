@@ -490,6 +490,13 @@ div.slide#primeiro {
     flex: 1;
 }
 
+@media (max-width: 800px) {
+    .aboutDiv-1 img {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
 .aboutDiv-1 p {
     display: inline-block;
     font-size: 1.4vw;
