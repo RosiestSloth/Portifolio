@@ -840,6 +840,18 @@ footer #redes {
     width: 250px;
 }
 
+#img_redes {
+    transition: transform 150ms ease;
+}
+
+#img_redes:hover {
+    transform: scale(1.2);
+}
+
+#img_redes:active {
+    transform: scale(0.8);
+}
+
 @media (max-width: 800px) {
     
     footer div#primeiro p {
