@@ -35,11 +35,14 @@ body {
     max-width: 100vw;
     color: white;
     background-color: var(--fundo);
+    scroll-behavior: smooth;
 }
 
 /* Header */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--titulos);
     color: var(--cor-Principal);
 }
@@ -55,6 +58,12 @@ h2 {
 h3 {
     font-weight: 800;
 }
+
+li {
+    font-family: var(--corpo);
+    font-size: 2vw;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -385,43 +394,70 @@ section.conteiner_carrousel h2 {
     overflow: hidden;
     position: relative;
     border: 6px solid var(--cor-Principal);
-    border-radius: 10px
+    border-radius: 10px;
+    
 }
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    height: 15vw;
-
-}
-
-div.slide#primeiro {
-    background: url('/images/imgs/Cominucação.png') no-repeat center right/cover;
-    z-index: 1;
-}
-
-div.backdrop::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0;
-  }
-  
-div.backdrop > * {
-position: relative;
-z-index: 2;
-}
-
-div.slide#segundo {
-    background: url('/images/imgs/Aprendizado.png') no-repeat center top/cover;
+    width: 100%;
 }
 
 .slide {
     min-width: 100%;
     box-sizing: border-box;
     color: white;
-    padding: 3vw;
+    padding: 2vw;
+    position: relative;
+}
+
+div.slide strong {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.372);
+    color: var(--conteiners);
+}
+
+/* Fundos específicos */
+div.slides #primeiro {
+    background: url('/images/imgs/Cominucação.png') no-repeat center right/cover;
+    z-index: 2;
+}
+
+div.slides #segundo {
+    background: url('/images/imgs/Aprendizado.png') no-repeat center right/cover;
+    z-index: 1;
+}
+
+div.slides #terceiro {
+    background: url('/images/imgs/Organização.png') no-repeat center center/cover;
+    z-index: 1;
+}
+
+div.slides #quarto {
+    background: url('/images/imgs/Trabalho em  Equipe.png') no-repeat center center/cover;
+    z-index: 1;
+}
+
+div.slides #quinto {
+    background: url('/images/imgs/Pensamento Crítico.png') no-repeat center center/cover;
+    z-index: 1;
+}
+
+/* Backdrop escuro para legibilidade */
+.backdrop::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.651);
+    z-index: 0;
+}
+
+.backdrop>* {
+    position: relative;
+    z-index: 1;
 }
 
 .botao {
@@ -603,13 +639,17 @@ div.slide#segundo {
     padding-top: 20px;
 }
 
-.aboutSecao-2 h2, .aboutSecao-3 h2, .aboutSecao-4 h2 {
+.aboutSecao-2 h2,
+.aboutSecao-3 h2,
+.aboutSecao-4 h2 {
     font-size: 5vw;
     text-align: center;
     color: var(--cor-Principal);
 }
 
-.aboutSecao-2 h3, .aboutSecao-3 h3, .aboutSecao-4 h3 {
+.aboutSecao-2 h3,
+.aboutSecao-3 h3,
+.aboutSecao-4 h3 {
     font-size: 3vw;
     margin-top: 15px;
     text-align: left;
@@ -766,11 +806,13 @@ ul li {
         padding-bottom: 10px;
     }
 
-    .aboutSecao-2 h2, .aboutSecao-3 h2 {
+    .aboutSecao-2 h2,
+    .aboutSecao-3 h2 {
         font-size: 7vw;
     }
-    
-    .aboutSecao-2 h3, .aboutSecao-3 h3 {
+
+    .aboutSecao-2 h3,
+    .aboutSecao-3 h3 {
         font-size: 5vw;
         margin-bottom: 3vw;
     }
@@ -871,7 +913,7 @@ footer #redes {
 }
 
 @media (max-width: 800px) {
-    
+
     footer div#primeiro p {
         font-size: 3vw;
     }

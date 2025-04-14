@@ -83,6 +83,19 @@ a:hover {
     }
 }
 
+.FA_img {
+    width: 100%;
+    border-radius: 6px;
+    border: 4px solid var(--bordas);
+    margin-top: 3vw;
+}
+
+.FA_img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
 .TJS_img {
     width: 100%;
     height: 100%;
@@ -111,6 +124,15 @@ a:hover {
         font-size: 1em;
         padding: 3px;
     }
+}
+
+ol {
+    list-style-position: inside;
+    margin-left: 20px;    
+}
+
+li {
+    margin: 10px 0px;
 }
 
 section  {
