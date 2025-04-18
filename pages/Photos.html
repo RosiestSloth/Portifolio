@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos</title>
     <link rel="stylesheet" href="../src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/Photos.css">
     <script src="../src/script.js" defer></script>
     <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
 </head>
@@ -55,34 +56,34 @@
             <section>
                 <div class="mosaic">
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Construcao_do_portifólio.jpg" alt="Correção de bugs do portifólio">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Construcao_do_portifólio.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Correção de bugs do portifólio">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Gatinho.jpg" alt="Gatinho">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Gatinho.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Gatinho">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Vinicius_no_mar.jpg" alt="Viagem para Maracaípe">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Vinicius_no_mar.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Viagem para Maracaípe">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Placa_de-Video.jpg" alt="Placa de vídeo RX 7600 8GB">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Placa_de-Video.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Placa de vídeo RX 7600 8GB">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/RX_7600.jpg" alt="RX 7600 8GB">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/RX_7600.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="RX 7600 8GB">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Sushi.jpg" alt="Sushi">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Sushi.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Sushi">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Vinicius_Programando.jpg" alt="Construindo o portifólio">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Vinicius_Programando.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Construindo o portifólio">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Codando_com_Equipe.jpg" alt="Codando com a Equipe na Universidade">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Codando_com_Equipe.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Codando com a Equipe na Universidade">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Editanto_Portifólio.jpg" alt="Corrigindo alguns Bugs no código">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Editanto_Portifólio.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Corrigindo alguns Bugs no código">
                     </button>
                     <button onclick="clicouSlide(event)" class="botaoMosaico">
-                        <img class="imagem_mosaic" src="/images/imgs/MinhasImgs/Pinturas.jpg" alt="Pinturas vistas em Maracaípe">
+                        <img class="imagem_mosaic fade-img" src="/images/imgs/MinhasImgs/Pinturas.jpg" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Pinturas vistas em Maracaípe">
                     </button>
                     
                 </div>
@@ -109,13 +110,13 @@
 
             <div id="redes">
                 <a href="https://www.tiktok.com/@vinicius___santos329?lang=pt-BR" target="_blank" rel="noopener"><img
-                        src="/images/svgs/TikTok.svg" width="35" height="35" alt="TikTok" id="img_redes"></a>
+                        src="/images/svgs/TikTok.svg" width="35" height="35" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="TikTok" id="img_redes"></a>
                 <a href="https://api.whatsapp.com/send/?phone=%2B5562992846807&text&type=phone_number&app_absent=0"
-                    target="_blank" rel="noopener"><img src="/images/svgs/WhatsApp.svg" width="35" height="35" alt="WhatsApp" id="img_redes"></a>
+                    target="_blank" rel="noopener"><img src="/images/svgs/WhatsApp.svg" width="35" height="35" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="WhatsApp" id="img_redes"></a>
                 <a href="https://www.instagram.com/vinicius___santos1?igsh=cHlrMGN0cWthZXAy&utm_source=qr"
-                    target="_blank" rel="noopener"><img src="/images/svgs/Instagram.svg" width="35" height="35" alt="Instagram" id="img_redes"></a>
+                    target="_blank" rel="noopener"><img src="/images/svgs/Instagram.svg" width="35" height="35" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="Instagram" id="img_redes"></a>
                 <a href="https://github.com/RosiestSloth" target="_blank" rel="noopener"><img src="/images/svgs/GitHub.svg" width="35"
-                        height="35" alt="GitHub" id="img_redes"></a>
+                        height="35" loading="lazy" @load="event.target.classList.add('opacity-100')" alt="GitHub" id="img_redes"></a>
             </div>
         </div>
     </footer>

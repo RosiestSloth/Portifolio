@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function adjustLayout() {
         const containerWidth = mosaic.offsetWidth; // Largura do contêiner principal
         const gap = 10; // Espaçamento entre as imagens
-        const columns = Math.floor(containerWidth / 200); // Calcula o número de colunas baseado na largura do contêiner
+        const columns = Math.floor(containerWidth / 300); // Calcula o número de colunas baseado na largura do contêiner
         const columnWidth = (containerWidth - (gap * (columns - 1))) / columns; // Largura de cada coluna
         const heights = new Array(columns).fill(0); // Cria um array para armazenar as alturas das colunas
 
@@ -139,3 +139,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Chama a função de ajuste de layout quando a janela for redimensionada
     window.addEventListener("resize", adjustLayout);
 });
+
+//Carregamento gradual das imagens para otimização
+document.addEventListener("DOMContentLoaded", function () {
+const imagens = document.querySelectorAll('img.fade-img');
+
+imagens.forEach(img => {
+    img.addEventListener('load', () => {
+    img.classList.add('loaded');
+    });
+
+    // Caso a imagem já esteja no cache
+    if (img.complete) {
+    img.classList.add('loaded');
+    }
+});
+});
+
