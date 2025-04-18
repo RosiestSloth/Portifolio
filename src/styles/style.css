@@ -246,8 +246,41 @@ header nav a.ativo {
 
 }
 
+svg#first {
+    fill: rgba(0, 0, 0, 0.500);
+    stroke: black;
+}
+
+a:hover svg#first {
+    fill: rgba(255, 255, 255, 0.500);
+    stroke: white;
+}
+
+a.ativo svg#first {
+    fill: rgba(255, 255, 255, 0.500);
+    stroke: white;
+}
+
+nav a.ativo svg#normal {
+    fill: rgb(255, 255, 255);
+    stroke: rgb(255, 255, 255);
+    transition: stroke 100ms ease, fill 100ms ease;
+}
+
 #sobre {
     width: 4vw;
+}
+
+nav a svg#normal {
+    fill: rgb(0, 0, 0);
+    stroke: black;
+    transition: stroke 100ms ease, fill 100ms ease;
+}
+
+nav a:hover svg#normal {
+    fill: rgb(255, 255, 255);
+    stroke: white;
+    transition: stroke 100ms ease, fill 100ms ease;
 }
 
 nav a:hover {
