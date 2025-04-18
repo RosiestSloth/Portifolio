@@ -2,6 +2,10 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
+
+main {
+    min-height: 1000px;
+}
   
 .fade-img.loaded {
     opacity: 1;
