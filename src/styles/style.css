@@ -851,30 +851,6 @@ ul li {
     }
 }
 
-/* Mosaico de fotos */
-
-.mosaic {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.mosaic button {
-    display: block;
-    overflow: hidden;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    border: 2px solid white;
-    cursor: pointer;
-}
-
-.mosaic img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-
 /* Rodapé */
 
 footer div#primeiro {
