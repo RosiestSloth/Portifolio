@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+
+/* Sobre mim */
+
+.aboutSecao-1 {
+    display: flex;
+    flex: 1;
+    margin-bottom: 3vh;
+}
+
+.aboutDiv-1 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+@media (max-width: 800px) {
+    .aboutDiv-1 img {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+.aboutDiv-1 p {
+    display: inline-block;
+    font-size: 1.4vw;
+}
+
+.aboutDiv-2 h1 {
+    font-size: 6.5vw;
+    color: var(--cor-Principal);
+}
+
+.aboutDiv-2 nav {
+    display: flex;
+    position: relative;
+    top: -30px;
+    padding: 0;
+}
+
+.aboutDiv-2 nav ul {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+}
+
+#subtitulo {
+    font-family: var(--chamadas);
+    display: inline-block;
+    bottom: 30px;
+    position: relative;
+    font-size: 2.3vw;
+    font-weight: 700;
+}
+
+.aboutDiv-2 p {
+    font-family: var(--corpo);
+    font-size: 2vw;
+    text-align: justify;
+    line-height: 1.5;
+    color: white;
+}
+
+.aboutDiv-2 nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutDiv-2 nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    border-radius: 6px;
+    border: 1px solid var(--bordas);
+    padding: 0.5vw 0;
+    gap: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-size: 2vw;
+    font-family: var(--chamadas);
+    font-weight: 700;
+    transition: background-color 300ms ease, transform 100ms ease;
+}
+
+.aboutDiv-2 nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.767);
+}
+
+.aboutDiv-2 nav ul li a:active {
+    transform: scale(0.9);
+}
+
+.aboutDiv-2 nav ul li a img {
+    width: 3vw;
+}
+
+.aboutDiv-2>p#texto {
+    display: block;
+    margin-top: 3vw;
+}
+
+.aboutSecao-2 {
+    margin-top: 3vw;
+    padding-top: 20px;
+}
+
+.aboutSecao-2 h2,
+.aboutSecao-3 h2,
+.aboutSecao-4 h2 {
+    font-size: 5vw;
+    text-align: center;
+    color: var(--cor-Principal);
+}
+
+.aboutSecao-2 h3,
+.aboutSecao-3 h3,
+.aboutSecao-4 h3 {
+    font-size: 3vw;
+    margin-top: 15px;
+    text-align: left;
+    color: var(--cor-Principal);
+    margin-bottom: 2vw;
+}
+
+.aboutSecao-2 p {
+    font-size: 2vw;
+    text-align: justify;
+    line-height: 1.5;
+    color: white;
+}
+
+.aboutSecao-2 a {
+    color: white;
+    text-decoration: none;
+    transition: color 100ms ease;
+    font-weight: 800;
+}
+
+.aboutSecao-2 a:hover {
+    color: var(--cor-Principal);
+}
+
+.aboutSecao-2 button {
+    background-color: var(--cor-Principal);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: background-color 300ms ease, transform 100ms ease, border 300ms ease;
+    margin-top: 1vw;
+    font-family: var(--chamadas);
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+
+.aboutSecao-2 button:hover {
+    background-color: white;
+    color: var(--cor-Principal);
+    border: 1px solid var(--cor-Principal);
+}
+
+.aboutSecao-2 button:active {
+    transform: scale(0.9);
+}
+
+
+#Butn_Certificados {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-family: var(--chamadas);
+    font-size: 1.5vw;
+    padding: 0.7vw;
+    padding-left: 3vw;
+    vertical-align: middle;
+    border-radius: 6px;
+    position: relative;
+    transition: background-color 300ms ease, transform 200ms ease;
+    margin-left: 2vw;
+    font-weight: 700;
+}
+
+#Butn_Certificados svg {
+    position: absolute;
+    top: 20%;
+    left: 1%;
+}
+
+#Butn_Certificados:active {
+    transform: scale(0.9);
+}
+
+
+#Butn_Certificados:hover {
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+@media (max-width: 1050px) {
+    .aboutSecao-1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutDiv-1 p {
+        font-size: 3vw;
+    }
+
+    .aboutDiv-2 h1 {
+        font-size: 10vw;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .aboutDiv-2 p {
+        font-size: 3vw;
+        padding: 3vw 0px;
+    }
+
+    #subtitulo {
+        font-size: 3vw;
+        text-align: center;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .aboutDiv-2 nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vw;
+        background-color: transparent;
+    }
+
+    .aboutDiv-2 nav ul li a {
+        width: 25vw;
+        font-size: 3vw;
+    }
+
+    .aboutDiv-2 nav ul li a img {
+        width: 4vw;
+    }
+}
+
