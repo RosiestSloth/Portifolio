@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/*
+    - Títulos (H1, H2, etc.): Montserrat Bold (Peso 700 ou 800).
+    - Subtítulos: Montserrat Medium (Peso 500).
+    - Texto do Corpo: Roboto Regular (Peso 400).
+    - Botões ou Chamadas para Ação: Poppins SemiBold (Peso 600).
+*/
+
+/* Variáveis CSS */
+
+:root {
+    --fundo: #101920;
+    --cor-Principal: #608BDA;
+    --bordas: #7AA0E7;
+    --conteiners: #98BCFF;
+    --hover: #43639D;
+    --titulos: "Montserrat", serif;
+    --corpo: "Roboto", sans-serif;
+    --chamadas: "Poppins", sans-serif;
+}
+
+a {
+    font-family: var(--chamadas);
+    font-weight: 600;
+    font-size: calc(0.5em + 1vw);
+}
