@@ -1,10 +1,10 @@
 <template>
     <header class="p-8 bg-[var(--cor-Principal)]">
-        <div class="flex items-center justify-center">
-            <h1 class="hidden lg:block text-white">
+        <div class="flex items-center relative h-10">
+            <h1 class="hidden lg:block text-white absolute left-2">
                 Vinicius
             </h1>
-            <nav aria-label="Navegação Desktop" class="flex items-center justify-between w-full max-w-xl h-12 rounded-md mx-auto bg-[var(--conteiners)]">
+            <nav aria-label="Navegação Desktop" class="flex items-center justify-between w-full max-w-xl h-12 rounded-md mx-auto bg-[var(--conteiners)] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <NuxtLink
                     class="group flex items-center font-chamadas gap-2 hover:text-white duration-100 ease-in w-full hover:bg-[var(--hover)] h-12 rounded-l-md pl-2"
                     to="/"
