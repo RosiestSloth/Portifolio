@@ -21,8 +21,28 @@
     --chamadas: "Poppins", sans-serif;
 }
 
+h1 {
+    font-family: var(--titulos);
+    font-weight: 800;
+}
+
+h2 {
+    font-family: var(--titulos);
+    font-weight: 700;
+}
+
+section p {
+    font-family: var(--corpo);
+    font-weight: 400;
+}
+
+header h1 {
+    font-size: clamp(2rem, 0.5rem + 1vw, 1.5rem);
+    color: white;
+}
+
 a {
     font-family: var(--chamadas);
     font-weight: 600;
-    font-size: calc(0.5em + 1vw);
+    font-size: clamp(1.2rem, 0.5rem + 1vw, 1.2rem);
 }
