@@ -46,3 +46,7 @@ a {
     font-weight: 600;
     font-size: clamp(1.2rem, 0.5rem + 1vw, 1.2rem);
 }
+
+#titulo_footer {
+    font-size: clamp(2rem, 0.5rem + 1vw, 1.5rem);
+}
