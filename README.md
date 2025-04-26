@@ -1,75 +1,88 @@
-# Nuxt Minimal Starter
+# Portfólio Pessoal
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Um portfólio pessoal moderno e responsivo construído com Nuxt 3, Vue 3 e Tailwind CSS.
 
-## Setup
+## 🚀 Tecnologias
 
-Make sure to install dependencies:
+- [Nuxt 3](https://nuxt.com/) - Framework Vue.js
+- [Vue 3](https://vuejs.org/) - Framework JavaScript progressivo
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário
+- [Vite](https://vitejs.dev/) - Build tool e servidor de desenvolvimento
+- [TypeScript](https://www.typescriptlang.org/) - Superset JavaScript tipado
 
+## 📦 Dependências Principais
+
+- `@nuxt/fonts` - Gerenciamento de fontes
+- `@nuxt/icon` - Sistema de ícones
+- `@nuxt/image` - Otimização de imagens
+- `tailwindcss` - Framework CSS
+- `vite-svg-loader` - Carregamento de SVGs
+
+## 🛠️ Instalação
+
+1. Clone o repositório:
 ```bash
-# npm
+git clone [https://github.com/RosiestSloth/Portifolio]
+```
+
+2. Instale as dependências:
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
+3. Inicie o servidor de desenvolvimento:
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
-
-Build the application for production:
-
+4. Para produção:
 ```bash
-# npm
 npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
 npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 📁 Estrutura do Projeto
+
+```
+├── assets/         # Arquivos estáticos (imagens, estilos, etc.)
+├── components/     # Componentes Vue reutilizáveis
+├── pages/          # Páginas da aplicação
+├── public/         # Arquivos públicos
+├── server/         # Configurações do servidor
+└── nuxt.config.ts  # Configuração do Nuxt
+```
+
+## 🎨 Componentes
+
+O projeto utiliza componentes Vue modernos e acessíveis, incluindo:
+
+- `Header.vue` - Navegação principal com ícones SVG
+- Outros componentes personalizados
+
+## 🌐 Funcionalidades
+
+- Design responsivo
+- Navegação acessível
+- Transições suaves
+- Otimização de imagens
+- Carregamento de SVGs
+
+## 🎯 Próximos Passos
+
+- [ ] Adicionar mais seções ao portfólio
+- [ ] Implementar modo escuro
+- [ ] Adicionar animações
+- [ ] Melhorar SEO
+- [ ] Adicionar testes
+
+## 📝 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
+
+## 👨‍💻 Autor
+
+Vinicius - Desenvolvedor Web
+
+---
+
+Feito com ❤️ usando Nuxt 3

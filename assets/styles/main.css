@@ -37,6 +37,11 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-family: var(--titulos);
+    font-weight: 700;
+}
+
 section p {
     font-family: var(--corpo);
     font-weight: 400;
@@ -61,6 +66,11 @@ section p {
 
 #titulos_secoes {
     font-size: clamp(2rem, 1.2rem + 3vw, 5rem);
+    font-weight: 800;
+}
+
+#titulos_secoes_h3 {
+    font-size: clamp(1rem, 1rem + 2vw, 3rem);
     font-weight: 800;
 }
 
