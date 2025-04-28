@@ -69,11 +69,28 @@
             Soft Skills
           </h2>
           <div class="container mx-auto px-4">
-            <Carousel
-              :slides="slides"
-              :autoplay="true"
-              :interval="5000"
-            />
+            <Carousel v-bind="carouselConfig">
+                <Slide>
+                    <div class="w-full p-4 bg-gray-200 h-full">
+                        Primeiro Slide
+                    </div>
+                </Slide>
+                <Slide>
+                    <div class="w-full p-4 bg-gray-300 h-full">
+                        Segundo Slide
+                    </div>
+                </Slide>
+                <Slide>
+                    <div class="w-full p-4 bg-gray-400 h-full">
+                        Terceiro Slide
+                    </div>
+                </Slide>
+
+                <template #addons>
+                <Navigation />
+                <Pagination />
+                </template>
+            </Carousel>
           </div>
         </section>
       </article>
@@ -82,41 +99,17 @@
 </template>
   
 <script setup lang="js">
-  import AboutIcon from '@/public/svgs/About.svg'
-</script>
+    import AboutIcon from '@/public/svgs/About.svg'
+    import 'vue3-carousel/carousel.css'
+    import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 
-<script lang="js">
-  import Carousel from '@/components/Carousel.vue'
-  
-  export default {
-    components: {
-      Carousel
-    },
-    data() {
-      return {
-        slides: [
-          {
-            title: 'Resolução de Problemas',
-            text: 'Capacidade de identificar e solucionar desafios técnicos de forma eficiente, garantindo o bom funcionamento dos projetos.'
-          },
-          {
-            title: 'Aprendizado Contínuo',
-            text: 'Curioso e autodidata, sempre buscando aprimorar habilidades e aprender novas tecnologias para acompanhar as tendências do mercado.'
-          },
-          {
-            title: 'Organização e Planejamento',
-            text: 'Uso de ferramentas como Notion para estruturar estudos, projetos e tarefas, garantindo produtividade e eficiência.'
-          },
-          {
-            title: 'Trabalho em Equipe',
-            text: 'Facilidade em colaborar com times e contribuir em projetos de código aberto, promovendo um ambiente de troca de conhecimento.'
-          },
-          {
-            title: 'Pensamento Crítico',
-            text: 'Habilidade de avaliar informações, identificar pontos fortes e fracos, e tomar decisões informadas para otimizar o desempenho e a qualidade do projeto.'
-          }
-        ]
-      }
+    const carouselConfig = {
+        itemsToShow: 1,
+        wrapAround: true,
+        autoplay: 5000,
+        gap: 10,
+        height: 200,
+        width: '100%',
+        pauseAutoplayOnHover: true,
     }
-  }
-  </script>
+</script>
