@@ -96,12 +96,13 @@ strong {
 .carousel .carousel__next {
     height: 50px;
     width: 50px;
-    color: black;
+    color: rgba(0, 0, 0, 0.493);
     font-size: 2rem;
     background-color: var(--cor-Principal);
     border-radius: 50%;
     padding: 10px;
     transition: opacity 0.1s ease, background-color 0.1s ease;
+    margin: 4px;
 }
 
 .carousel .carousel__prev:active,
@@ -116,18 +117,46 @@ strong {
 
 
 @media (max-width: 768px) {
+
     .carousel .carousel__prev,
     .carousel .carousel__next {
         display: none;
     }
 }
 
-.carousel .carousel__prev:active,
-.carousel .carousel__next:active {
-    background-color: var(--hover);
+.carousel .carousel__prev:hover{
+    opacity: 1;
+    color: black;
+    animation: hover_prev 0.5s ease;
 }
 
-.carousel .carousel__prev:hover,
-.carousel .carousel__next:hover {
+.carousel .carousel__next:hover{
     opacity: 1;
+    color: black;
+    animation: hover_next 0.5s ease;
 }
+
+@keyframes hover_prev {
+    0% {
+      transform: translate(-0px, -50%);
+    }
+    50% {
+      transform: translate(10px, -50%);
+    }
+    100% {
+      transform: translate(0, -50%);
+    }
+}
+
+@keyframes hover_next {
+    0% {
+      transform: translate(0, -50%);
+    }
+    50% {
+      transform: translate(-10px, -50%);
+    }
+    100% {
+      transform: translate(0, -50%);
+    }
+}
+  
