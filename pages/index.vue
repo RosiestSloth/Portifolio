@@ -69,61 +69,7 @@
             Soft Skills
           </h2>
           <div class="container mx-auto px-4">
-            <Carousel v-bind="carouselConfig">
-                <Slide>
-                    <div class="w-full p-4 bg-gray-200 h-full bg-[url(/imgs/resolucao_problemas.png)] ">
-                        <h4 class="w-full text-center">
-                            Resolução de Problemas
-                        </h4>
-                        <p>
-                            Capacidade de identificar e solucionar desafios técnicos de forma eficiente, garantindo o bom funcionamento dos projetos.
-                        </p>
-                    </div>
-                </Slide>
-                <Slide>
-                    <div class="w-full p-4 bg-gray-300 h-full">
-                        <h4>
-                          Aprendizado Contínuo
-                        </h4>
-                        <p>
-                          Curioso e autodidata, sempre buscando aprimorar habilidades e aprender novas tecnologias para acompanhar as tendências do mercado.
-                        </p>
-                    </div>
-                </Slide>
-                <Slide>
-                    <div class="w-full p-4 bg-gray-400 h-full">
-                        <h4>
-                          Organização e Planejamento
-                        </h4>
-                        <p>
-                          Uso de ferramentas como Notion para estruturar estudos, projetos e tarefas, garantindo produtividade e eficiência.
-                        </p>
-                    </div>
-                </Slide>
-                <Slide>
-                  <div class="w-full p-4 bg-gray-400 h-full">
-                    <h4>
-                      Trabalho em Equipe
-                    </h4>
-                    <p>
-                      Facilidade em colaborar com times e contribuir em projetos de código aberto, promovendo um ambiente de troca de conhecimento.
-                    </p>
-                  </div>
-                </Slide>
-                <Slide>
-                  <h4>
-                    Pensamento Crítico
-                  </h4>
-                  <p>
-                    Reflexão sobre questões sociais e ambientais, trazendo uma abordagem consciente e responsável para os projetos.
-                  </p>
-                </Slide>
-
-                <template #addons>
-                <Navigation />
-                <Pagination />
-                </template>
-            </Carousel>
+            <Carousel />
           </div>
         </section>
       </article>
@@ -133,16 +79,5 @@
   
 <script setup lang="js">
     import AboutIcon from '@/public/svgs/About.svg'
-    import 'vue3-carousel/carousel.css'
-    import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
-
-    const carouselConfig = {
-        itemsToShow: 1,
-        wrapAround: true,
-        autoplay: 5000,
-        gap: 10,
-        height: 200,
-        width: '100%',
-        pauseAutoplayOnHover: true,
-    }
+    import Carousel from '@/components/Carousel.vue'
 </script>

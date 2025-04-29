@@ -85,7 +85,6 @@
 <script setup>
     import GithubIcon from '../public/svgs/GitHub.svg';
     import InstagramIcon from '../public/svgs/Instagram.svg';
-    import LinkedInIcon from '../public/svgs/Linkedin.svg';
     import TikTokIcon from '../public/svgs/TikTok.svg';
     import WhatsappIcon from '../public/svgs/WhatsApp.svg';
 </script>
