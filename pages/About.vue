@@ -2,15 +2,15 @@
     <Header />
     <main>
         <article>
-            <section class="flex flex-col items-center justify-center">
-                <div class="flex flex-col items-center justify-center">
+            <section class="flex flex-col md:flex-row items-center justify-center">
+                <div class="flex-2 w-full md:w-1/2">
                     <img src="/imgs/ViniciusSantos.png" alt="">
                     <div>
                         <p>Português</p>
                         <p>Inglês</p>
                     </div>
                 </div>
-                <div class="aboutDiv-2">
+                <div class="flex-4 w-full md:w-1/2">
                     <h1>
                         Vinicius Santos
                     </h1>

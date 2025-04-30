@@ -9,7 +9,8 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description',
+        {
+          name: 'description',
           content: 'Portifólio de Vinicius Santos, desenvolvedor Front End e UX/UI, design responsivo e experiências web acessíveis. Confira meus projetos e entre em contato.'
         },
         { name: 'robots', content: 'index, follow' },
@@ -29,8 +30,8 @@ export default defineNuxtConfig({
       svgLoader(),
     ],
   },
-  modules: ['@nuxt/icon', 
-    '@nuxt/image', 
+  modules: ['@nuxt/icon',
+    '@nuxt/image',
     '@nuxt/fonts'
   ],
 });
