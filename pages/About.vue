@@ -1,201 +1,187 @@
 <template>
     <Header />
-    <main>
-        <article>
-            <section class="flex flex-col md:flex-row items-center justify-center">
-                <div class="flex-2 w-full md:w-1/2">
-                    <img src="/imgs/ViniciusSantos.png" alt="">
-                    <div>
-                        <p>Português</p>
-                        <p>Inglês</p>
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Seção Hero -->
+        <article class="space-y-12">
+            <section class="flex flex-col md:flex-row items-center justify-between gap-8 bg-white/5 rounded-xl p-6 backdrop-blur-sm">
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <img 
+                            src="/imgs/ViniciusSantos.png" 
+                            alt="Vinicius Santos"
+                            class="rounded-lg shadow-xl w-full object-cover"
+                        >
+                        <div class="absolute bottom-4 right-4 flex gap-2 bg-white/10 backdrop-blur-md rounded-lg p-2">
+                            <button class="px-3 py-1 rounded hover:bg-white/20 transition-colors">PT</button>
+                            <button class="px-3 py-1 rounded hover:bg-white/20 transition-colors">EN</button>
+                        </div>
                     </div>
                 </div>
-                <div class="flex-4 w-full md:w-1/2">
-                    <h1>
+
+                <div class="w-full md:w-1/2 space-y-6">
+                    <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
                         Vinicius Santos
                     </h1>
-                    <p id="subtitulo">
+                    <p class="text-xl text-gray-300">
                         Desenvolvedor Front-End e Designer Front-End
                     </p>
-                    <nav id="navegacaoAbout" aria-label="Minhas redes sociais">
-                        <ul>
+
+                    <nav aria-label="Minhas redes sociais">
+                        <ul class="flex gap-4">
                             <li>
-                                <a href="https://github.com/RosiestSloth" target="_blank" rel="noopener noreferrer">
-                                    <GitHubIcon class="size-6" /> GitHub
+                                <a 
+                                    href="https://github.com/RosiestSloth" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                                >
+                                    <GitHubIcon class="size-6" /> 
+                                    <span>GitHub</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
-                                    <LinkedInIcon class="size-6" /> LinkedIn
+                                <a 
+                                    href="https://linkedin.com/in/seu-perfil" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                                >
+                                    <LinkedInIcon class="size-6" /> 
+                                    <span>LinkedIn</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/vinicius___santos1?igsh=cHlrMGN0cWthZXAy&utm_source=qr"
-                                    target="_blank" rel="noopener noreferrer">
-                                    <InstagramIcon class="size-6" /> Instagram
+                                <a 
+                                    href="https://www.instagram.com/vinicius___santos1" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                                >
+                                    <InstagramIcon class="size-6" /> 
+                                    <span>Instagram</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
-                    <p id="texto">
+
+                    <p class="text-gray-300 leading-relaxed">
                         Meu nome é Vinicius e sou um desenvolvedor de Vianópolis, apaixonado por simplificar desafios complexos em soluções eficientes e intuitivas. Meu trabalho abrange aplicações web, experiências interativas e a combinação entre tecnologia e design focado no usuário.
                     </p>
                 </div>
             </section>
-            <hr>
-            <section class="aboutSecao-2">
-                <h2>
-                    Meus Trabalhos
-                </h2>
-                <h3>
-                    Wordpress
-                </h3>
-                <p>
-                    Adquiri muita experiência no <strong>desenvolvimento</strong> e na <strong>manutenção</strong> de sites em WordPress, atuando em projetos como o site <a href="https://www.correspondentevianopolino.com.br/site/" target="_blank" rel="noopener noreferrer">Correspondente Vianopolino</a>.
-                </p>
-                <button type="button"
-                    onclick="window.location.href='/pages/Works.html#wordpress'"
-                >
-                    Mais detalhes
-                </button>
-                <h3>
-                    Figma
-                </h3>
-                <p>
-                    Durante o desenvolvimento de diversos protótipos de sites, como o <strong>Follow-Up</strong>, <strong>Correspondente Vianopolino</strong>, este <strong>portfólio</strong> e o projeto Feedback IA, aperfeiçoei minhas habilidades em design e experiência do usuário. Cada projeto me permitiu explorar o <strong>Figma</strong> de maneira profunda, criando interfaces intuitivas e visualmente atraentes, sempre com foco na usabilidade.
-                </p>
-                <button type="button"
-                    onclick="window.location.href='/pages/Works.html#figma'"
-                >
-                    Mais detalhes
-                </button>
-                <h3>
-                    Frameworks
-                </h3>
-                <p>
-                    Adquiri muita experiência trabalhando com <strong>frameworks</strong> em projetos como o <strong>Follow-Up</strong>. Gostei muito de trabalhar com frameworks, especialmente com a integração do <strong>Tailwind CSS</strong>, que me proporcionou muita flexibilidade nas estilizações.
-                </p>
-                <button type="button"
-                    onclick="window.location.href='/pages/Works.html#frameworks'"
-                >
-                    Mais detalhes
-                </button>
-            </section>
-            <section class="aboutSecao-3">
-                <h2>
-                    Soft/Hard Skills
-                </h2>
-                <h3>
-                    Hard Skills
-                </h3>
-                <ul id="hardSkills">
-                    <li>
-                        <strong>React.Js: </strong>Utilização do React.Js para desenvolver layouts web responsivos e modernos.
-                    </li>
-                    <li>
-                        <strong>Vue: </strong>Experiencia com Vue para contrução de designs web eficientes e otimizados.
-                    </li>
-                    <li>
-                        <strong>Tailwind CSS: </strong>Uso do Tailwind CSS para transformar designs em sites responsivos e eficientes.
-                    </li>
-                    <li>
-                        <strong>WordPress: </strong>Criação e manutenção de sites de forma eficientes utilizando o auxilio de plugins e temas.
-                    </li>
-                    <li>
-                        <strong>Figma: </strong>Utilização do Figma para criar interfaces de usuário intuitivas e atraentes.
-                    </li>
-                    <li>
-                        <strong>Git: </strong>Utilização do Git para controle de versões e colaboração em projetos de desenvolvimento.
-                    </li>
-                    <li>
-                        <strong>GitHub: </strong>Utilização do GitHub para hospedar e gerenciar projetos de desenvolvimento.
-                    </li>
-                </ul>
-                <h3>
-                    Soft Skills
-                </h3>
-                <ul>
-                    <li>
-                        <strong>Comunicação: </strong> Comunicação eficaz com times de desenvolvimento e equipe de design.
-                    </li>
-                    <li>
-                        <strong>Inteligência Emocional: </strong> Compreensão e gestão das emoções de forma eficiente.
-                    </li>
-                    <li>
-                        <strong>Adaptabilidade: </strong>Aprendizado e adaptação de novas Hard Skills e Soft Skills.
-                    </li>
-                    <li>
-                        <strong>Gestão de Tempo: </strong>Melhoria da produtividade e redução de estresse.
-                    </li>
-                    <li>
-                        <strong>Trabalho em Equipe: </strong>Colaboração eficiente em projetos de desenvolvimento.
-                    </li>
-                    <li>
-                        <strong>Empatia: </strong>Entendendo e compreendendo as necessidades e sentimentos das pessoas.
-                    </li>
-                    <li>
-                        <strong>Resuloção de Conflitos: </strong>Solução de conflitos de forma pacifica e eficiente.
-                    </li>
-                </ul>
-            </section>
-            <section class="aboutSecao-4">
-                <h2>
-                    Educação e Certificações
-                </h2>
-                <h3>
-                    Educação
-                </h3>
-                <p>
-                    <strong>Bacharelado em Engenharia de Software </strong><br>
-                    <strong>Instituição:</strong> UniEvangélica de Anápolis <br>
-                    <strong>Status:</strong> 5º Período (Em andamento) <br>
-                    <strong>Áreas de Estudo:</strong> Desenvolvimento de software, lógica computacional, metodologias ágeis e fundamentos de programação.
-                </p>
-                <h3>
-                    Certificações
-                </h3>
-                <p>
-                    <strong>Python 1, 2 e 3</strong> <a id="Butn_Certificados" href="../src/arquivos/PDFs/Python.zip" download="Phyton.zip"> <FilesIcon /> Baixar Certificado</a>
-                </p>
-                <p>
-                    <strong>Instituição: </strong>Curso em Vídeo - Gustavo Guanabara <br>
-                    <strong>Status: </strong>Concluído <br>
-                    <strong>Descrição: </strong>Formação completa em <strong>Python</strong>, abordando desde os fundamentos da linguagem até conceitos avançados, como manipulação de dados, bibliotecas e desenvolvimento de scripts automatizados.
-                </p>
-                <p>
-                    <strong>JavaScript </strong> <a id="Butn_Certificados" href="../src/arquivos/PDFs/JavaScript.pdf" download="JavaScript.pdf"> <FilesIcon /> Baixar Certificado</a>
-                </p>
-                <p>
-                    <strong>Instituição: </strong>Curso em Vídeo - Gustavo Guanabara <br>
-                    <strong>Status: </strong>Concluído <br>
-                    <strong>Descrição: </strong>Curso voltado para desenvolvimento web interativo, cobrindo manipulação do <strong>DOM</strong>, enventos e funcionalidades modernas da linguagem.
-                </p>
-                <p>
-                    <strong>HTML5 e CSS3 - Mundo 1, 2, 3, 4 e 5<a id="Butn_Certificados" href="/src/arquivos/PDFs/HTML_e_CSS.zip" download="HTML_e_CSS.zip"> <FilesIcon /> Baixar Certificado</a></strong>
-                </p>
-                <p>
-                    <strong>Instituição: </strong>Curso em Vídeo - Gustavo Guanabara <br>
-                    <strong>Status: </strong> Em andamento (3º Mundo) <br>
-                    <strong>Descrição: </strong>Introdução prática ao desenvolvimento web com foco na criação de páginas estruturadas e estilizadas, utilizando as melhores práticas em <strong>HTML5</strong> e <strong>CSS3</strong>.
-                </p>
 
-                <p>
-                    <strong>Wordpress<a id="Butn_Certificados" href="/src/arquivos/PDFs/HTML_e_CSS.zip" download="HTML_e_CSS.zip"> <FilesIcon /> Baixar Certificado</a></strong>
-                </p>
-                <p>
-                    <strong>Instituição: </strong>Curso em Vídeo - Gustavo Guanabara <br>
-                    <strong>Status: </strong> Em andamento (1º Mundo) <br>
-                    <strong>Descrição: </strong>Aprender a desenvolver sites completos e responsivos utilizando o <strong>WordPress</strong>desde a instalação até a personalização com o editor <strong>Gutenberg</strong>, temas e plugins.
-                </p>
+            <!-- Seção Trabalhos -->
+            <section class="space-y-8">
+                <h2 class="text-3xl font-bold text-center">Meus Trabalhos</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <WorkCard 
+                        title="WordPress"
+                        description="Adquiri muita experiência no desenvolvimento e na manutenção de sites em WordPress, atuando em projetos como o site Correspondente Vianopolino."
+                        link="/pages/Works#wordpress"
+                    />
+                    <WorkCard 
+                        title="Figma"
+                        description="Durante o desenvolvimento de diversos protótipos de sites, aperfeiçoei minhas habilidades em design e experiência do usuário."
+                        link="/pages/Works#figma"
+                    />
+                    <WorkCard 
+                        title="Frameworks"
+                        description="Adquiri muita experiência trabalhando com frameworks em projetos como o Follow-Up, com destaque para Tailwind CSS."
+                        link="/pages/Works#frameworks"
+                    />
+                </div>
+            </section>
+
+            <!-- Seção Skills -->
+            <section class="grid md:grid-cols-2 gap-8 bg-white/5 rounded-xl p-6">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold">Hard Skills</h3>
+                    <div class="space-y-4">
+                        <SkillBar skill="React.js" level="80" />
+                        <SkillBar skill="Vue" level="75" />
+                        <SkillBar skill="Tailwind CSS" level="90" />
+                        <SkillBar skill="WordPress" level="85" />
+                        <SkillBar skill="Figma" level="80" />
+                        <SkillBar skill="Git" level="75" />
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold">Soft Skills</h3>
+                    <ul class="space-y-4">
+                        <li v-for="skill in softSkills" :key="skill.name" class="flex items-center gap-2">
+                            <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                            <strong>{{ skill.name }}:</strong> 
+                            <span class="text-gray-300">{{ skill.description }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Seção Educação -->
+            <section class="space-y-8">
+                <h2 class="text-3xl font-bold text-center">Educação e Certificações</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white/5 rounded-xl p-6">
+                        <h3 class="text-2xl font-bold mb-4">Educação</h3>
+                        <div class="space-y-4">
+                            <h4 class="text-xl font-semibold">Bacharelado em Engenharia de Software</h4>
+                            <p class="text-gray-300">UniEvangélica de Anápolis</p>
+                            <p class="text-blue-400">5º Período (Em andamento)</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/5 rounded-xl p-6">
+                        <h3 class="text-2xl font-bold mb-4">Certificações</h3>
+                        <div class="space-y-6">
+                            <CertificateCard 
+                                v-for="cert in certificates" 
+                                :key="cert.title"
+                                :certificate="cert"
+                            />
+                        </div>
+                    </div>
+                </div>
             </section>
         </article>
     </main>
     <Footer />
 </template>
 
-<script setup lang="js">
-    import FilesIcon from '../public/svgs/Files.svg';
-    import GitHubIcon from '../public/svgs/GitHub.svg';
-    import LinkedInIcon from '../public/svgs/Linkedin.svg';
-    import InstagramIcon from '../public/svgs/Instagram.svg';
+<script setup>
+import { ref } from 'vue'
+import FilesIcon from '../public/svgs/Files.svg'
+import GitHubIcon from '../public/svgs/GitHub.svg'
+import LinkedInIcon from '../public/svgs/Linkedin.svg'
+import InstagramIcon from '../public/svgs/Instagram.svg'
+import WorkCard from '../components/WorkCard.vue'
+import SkillBar from '../components/SkillBar.vue'
+import CertificateCard from '../components/CertificateCard.vue'
+
+const softSkills = ref([
+    { name: 'Comunicação', description: 'Comunicação eficaz com times de desenvolvimento e equipe de design' },
+    { name: 'Inteligência Emocional', description: 'Compreensão e gestão das emoções de forma eficiente' },
+    { name: 'Adaptabilidade', description: 'Aprendizado e adaptação de novas Hard Skills e Soft Skills' },
+    { name: 'Gestão de Tempo', description: 'Melhoria da produtividade e redução de estresse' },
+    { name: 'Trabalho em Equipe', description: 'Colaboração eficiente em projetos de desenvolvimento' },
+    { name: 'Empatia', description: 'Entendendo e compreendendo as necessidades das pessoas' },
+])
+
+const certificates = ref([
+    {
+        title: 'Python 1, 2 e 3',
+        institution: 'Curso em Vídeo - Gustavo Guanabara',
+        status: 'Concluído',
+        downloadUrl: '../src/arquivos/PDFs/Python.zip'
+    },
+    {
+        title: 'JavaScript',
+        institution: 'Curso em Vídeo - Gustavo Guanabara',
+        status: 'Concluído',
+        downloadUrl: '../src/arquivos/PDFs/JavaScript.pdf'
+    },
+    // ... outros certificados
+])
 </script>
