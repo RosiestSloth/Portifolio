@@ -6,20 +6,38 @@
             <section class="flex flex-col md:flex-row items-center justify-between gap-8 bg-white/5 rounded-xl p-6 backdrop-blur-sm">
                 <div class="w-full md:w-1/2">
                     <div class="relative">
-                        <img 
+                        <NuxtImg 
                             src="/imgs/ViniciusSantos.png" 
                             alt="Vinicius Santos"
                             class="rounded-lg shadow-xl w-full object-cover"
-                        >
+                            quality="100"
+                        />
                         <div class="absolute bottom-4 right-4 flex gap-2 bg-white/10 backdrop-blur-md rounded-lg p-2">
-                            <button class="px-3 py-1 rounded hover:bg-white/20 transition-colors">PT</button>
-                            <button class="px-3 py-1 rounded hover:bg-white/20 transition-colors">EN</button>
-                        </div>
+                            <button 
+                            class="relative px-3 py-1 rounded hover:bg-white/20 transition-colors text-[var(--variacao5)]
+                                before:absolute before:bottom-full before:right-0
+                                before:bg-white before:text-black before:px-2 before:py-1
+                                before:rounded before:shadow-md before:opacity-0
+                                hover:before:opacity-100 before:transition-opacity
+                                before:content-['Português_Nativo']">
+                                PT
+                            </button>
+
+                            <button 
+                            class="relative px-3 py-1 rounded hover:bg-white/20 transition-colors text-[var(--variacao5)]
+                                before:absolute before:bottom-full before:right-0
+                                before:bg-white before:text-black before:px-2 before:py-1
+                                before:rounded before:shadow-md before:opacity-0
+                                hover:before:opacity-100 before:transition-opacity
+                                before:content-['Inglês_Intermediário']">
+                                EN
+                            </button>
+                            </div>
                     </div>
                 </div>
 
                 <div class="w-full md:w-1/2 space-y-6">
-                    <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+                    <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[var(--variacao3)] to-[var(--variacao2)] bg-clip-text text-transparent">
                         Vinicius Santos
                     </h1>
                     <p class="text-xl text-gray-300">
@@ -27,39 +45,39 @@
                     </p>
 
                     <nav aria-label="Minhas redes sociais">
-                        <ul class="flex gap-4">
+                        <ul class="flex gap-4 items-center justify-center">
                             <li>
-                                <a 
+                                <NuxtLink 
                                     href="https://github.com/RosiestSloth" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
                                 >
-                                    <GitHubIcon class="size-6" /> 
-                                    <span>GitHub</span>
-                                </a>
+                                    <GitHubIcon class="size-8 fill-white " /> 
+                                    <span class="hidden xl:block">GitHub</span>
+                                </NuxtLink>
                             </li>
                             <li>
-                                <a 
+                                <NuxtLink 
                                     href="https://linkedin.com/in/seu-perfil" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
                                 >
-                                    <LinkedInIcon class="size-6" /> 
-                                    <span>LinkedIn</span>
-                                </a>
+                                    <LinkedInIcon class="size-8" /> 
+                                    <span class="hidden xl:block">LinkedIn</span>
+                                </NuxtLink>
                             </li>
                             <li>
-                                <a 
+                                <NuxtLink 
                                     href="https://www.instagram.com/vinicius___santos1" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
                                 >
-                                    <InstagramIcon class="size-6" /> 
-                                    <span>Instagram</span>
-                                </a>
+                                    <InstagramIcon class="size-8" /> 
+                                    <span class="hidden xl:block">Instagram</span>
+                                </NuxtLink>
                             </li>
                         </ul>
                     </nav>
@@ -151,37 +169,36 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import FilesIcon from '../public/svgs/Files.svg'
-import GitHubIcon from '../public/svgs/GitHub.svg'
-import LinkedInIcon from '../public/svgs/Linkedin.svg'
-import InstagramIcon from '../public/svgs/Instagram.svg'
-import WorkCard from '../components/WorkCard.vue'
-import SkillBar from '../components/SkillBar.vue'
-import CertificateCard from '../components/CertificateCard.vue'
+    import { ref } from 'vue'
+    import GitHubIcon from '../public/svgs/GitHub.svg'
+    import LinkedInIcon from '../public/svgs/Linkedin.svg'
+    import InstagramIcon from '../public/svgs/Instagram.svg'
+    import WorkCard from '../components/WorkCard.vue'
+    import SkillBar from '../components/SkillBar.vue'
+    import CertificateCard from '../components/CertificateCard.vue'
 
-const softSkills = ref([
-    { name: 'Comunicação', description: 'Comunicação eficaz com times de desenvolvimento e equipe de design' },
-    { name: 'Inteligência Emocional', description: 'Compreensão e gestão das emoções de forma eficiente' },
-    { name: 'Adaptabilidade', description: 'Aprendizado e adaptação de novas Hard Skills e Soft Skills' },
-    { name: 'Gestão de Tempo', description: 'Melhoria da produtividade e redução de estresse' },
-    { name: 'Trabalho em Equipe', description: 'Colaboração eficiente em projetos de desenvolvimento' },
-    { name: 'Empatia', description: 'Entendendo e compreendendo as necessidades das pessoas' },
-])
+    const softSkills = ref([
+        { name: 'Comunicação', description: 'Comunicação eficaz com times de desenvolvimento e equipe de design' },
+        { name: 'Inteligência Emocional', description: 'Compreensão e gestão das emoções de forma eficiente' },
+        { name: 'Adaptabilidade', description: 'Aprendizado e adaptação de novas Hard Skills e Soft Skills' },
+        { name: 'Gestão de Tempo', description: 'Melhoria da produtividade e redução de estresse' },
+        { name: 'Trabalho em Equipe', description: 'Colaboração eficiente em projetos de desenvolvimento' },
+        { name: 'Empatia', description: 'Entendendo e compreendendo as necessidades das pessoas' },
+    ])
 
-const certificates = ref([
-    {
-        title: 'Python 1, 2 e 3',
-        institution: 'Curso em Vídeo - Gustavo Guanabara',
-        status: 'Concluído',
-        downloadUrl: '../src/arquivos/PDFs/Python.zip'
-    },
-    {
-        title: 'JavaScript',
-        institution: 'Curso em Vídeo - Gustavo Guanabara',
-        status: 'Concluído',
-        downloadUrl: '../src/arquivos/PDFs/JavaScript.pdf'
-    },
-    // ... outros certificados
-])
+    const certificates = ref([
+        {
+            title: 'Python 1, 2 e 3',
+            institution: 'Curso em Vídeo - Gustavo Guanabara',
+            status: 'Concluído',
+            downloadUrl: '../src/arquivos/PDFs/Python.zip'
+        },
+        {
+            title: 'JavaScript',
+            institution: 'Curso em Vídeo - Gustavo Guanabara',
+            status: 'Concluído',
+            downloadUrl: '../src/arquivos/PDFs/JavaScript.pdf'
+        },
+        // ... outros certificados
+    ])
 </script>

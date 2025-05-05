@@ -9,12 +9,13 @@
                 </h3>
                 
                 <div class="relative rounded-lg overflow-hidden">
-                    <img 
+                    <NuxtImg 
                         src="/imgs/CorrespondenteVianopolino/CorrespondenteVianopolino.png" 
                         loading="lazy" 
                         alt="Site Correspondente Vianopolino"
                         class="w-full object-cover"
-                    >
+                        quality="100"
+                    />
                 </div>
 
                 <div class="space-y-4 text-gray-300">
@@ -26,7 +27,7 @@
                         >Correspondente Vianopolino</a> é um site de notícias da minha cidade natal, Vianópolis. Neste projeto, meu principal desafio foi realizar o redesign completo do site, aplicando princípios fundamentais de acessibilidade, usabilidade e segurança, a fim de melhorar a experiência dos leitores e a confiabilidade da plataforma.
                     </p>
                     
-                    <div class="flex flex-col md:flex-row gap-6 items-center">
+                    <div class="flex flex-wrap gap-2 md:gap-6 items-center justify-center">
                         <TechnologyBadge icon="wordpress" label="WordPress" />
                         <TechnologyBadge icon="astra" label="Astra" />
                         <TechnologyBadge icon="spectra" label="Spectra" />
@@ -35,18 +36,20 @@
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-4 mt-6">
-                        <img 
+                        <NuxtImg 
                             src="/imgs/CorrespondenteVianopolino/Site_Antes.jpeg" 
                             loading="lazy" 
                             alt="Correspondente Vianopolino antes do meu trabalho"
                             class="rounded-lg"
-                        >
-                        <img 
+                            quality="100"
+                        />
+                        <NuxtImg 
                             src="/imgs/CorrespondenteVianopolino/Site_Depois.jpeg" 
                             loading="lazy" 
                             alt="Correspondente Vianopolino depois do meu trabalho"
                             class="rounded-lg"
-                        >
+                            quality="100"
+                        />
                     </div>
                 </div>
             </section>
@@ -58,12 +61,13 @@
                 </h3>
 
                 <div class="relative rounded-lg overflow-hidden">
-                    <img 
+                    <NuxtImg 
                         src="/imgs/FeedbackAnalytics_1.png" 
                         loading="lazy" 
                         alt="FeedBack Analytics Interface"
                         class="w-full object-cover"
-                    >
+                        quality="100"
+                    />
                 </div>
 
                 <div class="space-y-4 text-gray-300">
@@ -97,12 +101,13 @@
                     Trajetória JavaScript
                 </h3>
                 <div class="relative rounded-lg overflow-hidden">
-                    <img 
+                    <NuxtImg 
                         src="/imgs/TrajetoriaJS.png" 
                         loading="lazy" 
                         alt="Trajetória JavaScript projeto"
                         class="w-full object-cover"
-                    >
+                        quality="100"
+                    />
                 </div>
                 <p>
                     O projeto Trajetória JavaScript foi criado com o objetivo de auxiliar pessoas que, assim como eu, estão iniciando na área de desenvolvimento web. JavaScript é uma das linguagens mais utilizadas no setor, e por isso, decidi desenvolver este site para compartilhar conhecimento e ajudar outros a trilharem esse caminho com mais facilidade.
@@ -126,7 +131,13 @@
                     <h3 class="text-2xl font-bold mb-4">
                         Projeto Android
                     </h3>
-                    <img id="ProjetoAndroid" src="/imgs/ProjetoAndroid.png" loading="lazy" alt="Projeto Android por Curso em Vídeo">
+                    <NuxtImg 
+                        src="/imgs/ProjetoAndroid.png" 
+                        loading="lazy" 
+                        alt="Projeto Android por Curso em Vídeo"
+                        id="ProjetoAndroid"
+                        quality="100"
+                    />
                     <p>
                         O <strong>Projeto Android</strong> foi desenvolvido com intuito educacional e sem fins lucrativos. 
                     </p>
@@ -143,7 +154,13 @@
                     <h3 class="text-2xl font-bold mb-4">
                         Projeto Cordel
                     </h3>
-                    <img src="/imgs/Projeto_Cordel.png" loading="lazy" alt="Projeto Cordel por Curso em Vídeo" id="ProjetoCordel_img">
+                    <NuxtImg 
+                        src="/imgs/Projeto_Cordel.png" 
+                        loading="lazy" 
+                        alt="Projeto Cordel por Curso em Vídeo" 
+                        id="ProjetoCordel_img"
+                        quality="100"
+                    />
 
                     <p>
                         O <strong>Projeto Cordel</strong> foi desenvolvido com intuito educacional e sem fins lucrativos.<br><br>
@@ -158,6 +175,5 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import TechnologyBadge from '../components/TechnologyBadge.vue'
 </script>
