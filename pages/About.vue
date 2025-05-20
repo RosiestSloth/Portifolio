@@ -32,7 +32,7 @@
                                 before:content-['Inglês_Intermediário']">
                                 EN
                             </button>
-                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -51,10 +51,10 @@
                                     href="https://github.com/RosiestSloth" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--variacao3)]/70 hover:bg-[var(--variacao2)] transition-colors shadow-lg"
                                 >
-                                    <GitHubIcon class="size-8 fill-white " /> 
-                                    <span class="hidden xl:block">GitHub</span>
+                                    <GitHubIcon class="size-8 fill-white" /> 
+                                    <span class="hidden xl:block text-white font-medium">GitHub</span>
                                 </NuxtLink>
                             </li>
                             <li>
@@ -62,10 +62,10 @@
                                     href="https://linkedin.com/in/seu-perfil" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--variacao3)]/70 hover:bg-[var(--variacao2)] transition-colors shadow-lg"
                                 >
-                                    <LinkedInIcon class="size-8" /> 
-                                    <span class="hidden xl:block">LinkedIn</span>
+                                    <LinkedInIcon class="size-8 fill-white" /> 
+                                    <span class="hidden xl:block text-white font-medium">LinkedIn</span>
                                 </NuxtLink>
                             </li>
                             <li>
@@ -73,10 +73,10 @@
                                     href="https://www.instagram.com/vinicius___santos1" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
-                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                                    class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--variacao3)]/70 hover:bg-[var(--variacao2)] transition-colors shadow-lg"
                                 >
-                                    <InstagramIcon class="size-8" /> 
-                                    <span class="hidden xl:block">Instagram</span>
+                                    <InstagramIcon class="size-8 fill-white" /> 
+                                    <span class="hidden xl:block text-white font-medium">Instagram</span>
                                 </NuxtLink>
                             </li>
                         </ul>
@@ -90,7 +90,7 @@
 
             <!-- Seção Trabalhos -->
             <section class="space-y-8">
-                <h2 class="text-3xl font-bold text-center">Meus Trabalhos</h2>
+                <h2 class="text-3xl font-bold text-center text-[var(--variacao5)]">Meus Trabalhos</h2>
                 
                 <div class="grid md:grid-cols-3 gap-6">
                     <WorkCard 
@@ -114,22 +114,22 @@
             <!-- Seção Skills -->
             <section class="grid md:grid-cols-2 gap-8 bg-white/5 rounded-xl p-6">
                 <div class="space-y-6">
-                    <h3 class="text-2xl font-bold">Hard Skills</h3>
+                    <h3 class="text-2xl font-bold text-[var(--variacao5)]">Hard Skills</h3>
                     <div class="space-y-4">
-                        <SkillBar skill="React.js" level="80" />
+                        <SkillBar skill="React.js" level="40" />
                         <SkillBar skill="Vue" level="75" />
                         <SkillBar skill="Tailwind CSS" level="90" />
-                        <SkillBar skill="WordPress" level="85" />
-                        <SkillBar skill="Figma" level="80" />
-                        <SkillBar skill="Git" level="75" />
+                        <SkillBar skill="WordPress" level="75" />
+                        <SkillBar skill="Figma" level="85" />
+                        <SkillBar skill="Git" level="90" />
                     </div>
                 </div>
 
                 <div class="space-y-6">
-                    <h3 class="text-2xl font-bold">Soft Skills</h3>
+                    <h3 class="text-2xl font-bold text-[var(--variacao5)]">Soft Skills</h3>
                     <ul class="space-y-4">
                         <li v-for="skill in softSkills" :key="skill.name" class="flex items-center gap-2">
-                            <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                            <span class="w-2 h-2 bg-[var(--variacao5)] rounded-full"></span>
                             <strong>{{ skill.name }}:</strong> 
                             <span class="text-gray-300">{{ skill.description }}</span>
                         </li>
@@ -139,15 +139,18 @@
 
             <!-- Seção Educação -->
             <section class="space-y-8">
-                <h2 class="text-3xl font-bold text-center">Educação e Certificações</h2>
+                <h2 class="text-3xl font-bold text-center text-[var(--variacao5)]">Educação e Certificações</h2>
                 
                 <div class="grid md:grid-cols-2 gap-8">
                     <div class="bg-white/5 rounded-xl p-6">
-                        <h3 class="text-2xl font-bold mb-4">Educação</h3>
+                        <h3 class="text-2xl font-bold mb-4 text-[var(--variacao5)]">Educação</h3>
                         <div class="space-y-4">
-                            <h4 class="text-xl font-semibold">Bacharelado em Engenharia de Software</h4>
+                            <h4 class="text-xl font-semibold text-[var(--variacao4)]">Bacharelado em Engenharia de Software</h4>
+                            <p class="text-gray-300">Início: 2022</p>
+                            <p class="text-gray-300">Previsão de conclusão: 2026</p>
+                            <p class="text-gray-300">Foco em desenvolvimento web, estruturas de dados e engenharia de requisitos.</p>
                             <p class="text-gray-300">UniEvangélica de Anápolis</p>
-                            <p class="text-blue-400">5º Período (Em andamento)</p>
+                            <p class="text-[var(--variacao5)]">5º Período (Em andamento)</p>
                         </div>
                     </div>
 
@@ -191,14 +194,22 @@
             title: 'Python 1, 2 e 3',
             institution: 'Curso em Vídeo - Gustavo Guanabara',
             status: 'Concluído',
-            downloadUrl: '../src/arquivos/PDFs/Python.zip'
+            downloadUrl: '/files/Certificates/Python.zip'
         },
         {
             title: 'JavaScript',
             institution: 'Curso em Vídeo - Gustavo Guanabara',
             status: 'Concluído',
-            downloadUrl: '../src/arquivos/PDFs/JavaScript.pdf'
+            downloadUrl: '/files/Certificates/JavaScript.pdf'
         },
-        // ... outros certificados
+        {
+            title: 'HTML5 e CSS3',
+            institution: 'Curso em Vídeo - Gustavo Guanabara',
+            status: 'Em andamento',
+            downloadUrl: '/files/Certificates/HTML_e_CSS.zip'
+        },
+        {
+            
+        }
     ])
 </script>

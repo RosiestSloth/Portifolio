@@ -1,12 +1,12 @@
 <template>
     <div class="space-y-2">
       <div class="flex justify-between items-center">
-        <span class="font-medium">{{ skill }}</span>
-        <span class="text-sm text-gray-400">{{ level }}%</span>
+        <span class="font-medium text-[var(--variacao4)]">{{ skill }}</span>
+        <span class="text-sm text-[var(--variacao5)]">{{ level }}%</span>
       </div>
       <div class="h-2 bg-white/5 rounded-full overflow-hidden">
         <div
-          class="h-full rounded-full bg-gradient-to-r from-blue-400 to-purple-600 transition-all duration-500"
+          class="h-full rounded-full bg-gradient-to-r from-[var(--variacao3)] to-[var(--variacao2)] transition-all duration-500"
           :style="{ width: `${level}%` }"
         ></div>
       </div>

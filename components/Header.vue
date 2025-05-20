@@ -46,9 +46,15 @@
     </header>
 </template>
 
+<style >
+
+</style>
+
 <script setup>
     import HomeIcon from '../public/svgs/Home.svg';
     import AboutIcon from '../public/svgs/About.svg';
     import WorksIcon from '../public/svgs/Works.svg';
     import PhotosIcon from '../public/svgs/Photos.svg';
+
+    const indexHeader = document.querySelector('#')
 </script>
