@@ -173,7 +173,7 @@
                     <p class="text-gray-300">
                         O <strong>Projeto Cordel</strong> foi desenvolvido com intuito educacional e sem fins lucrativos.<br><br>
                         Criado por <strong>Gustavo Guanabara</strong> para o <NuxtLink href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">Curso em Video</NuxtLink>, esse projeto faz parte do curso de <strong>HTML5</strong> e <strong>CSS3</strong>. Durante o curso, pude aprofundar minhas habilidades em <strong>desenvolvimento Web Front-End</strong>, e esse foi o meu primeiro projeto dentro da formação. <br><br>
-                        Minha experiência no desenvolvimento foi bastante satisfatória, proporcionando um aprendizado valioso e reforçando meus conhecimentos na área.
+                        Minha experiência no desenvolvimento foi bastante satisfatória, proporcionando um aprendizado valioso e reforçando meus conhecimentos na área. 
                     </p>
                 </section>
             </div>
