@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
         <div class="flex justify-between items-start mb-3">
-            <h4 class="text-lg text-[var(--variacao4)] font-semibold">{{ certificate.title }}</h4>
+            <h4 class="text-xl text-[var(--variacao4)] font-semibold">{{ certificate.title }}</h4>
             <a 
                 v-if="certificate.downloadUrl"
                 :href="certificate.downloadUrl"

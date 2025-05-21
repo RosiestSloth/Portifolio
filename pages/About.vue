@@ -213,6 +213,12 @@
             institution: 'Curso em Vídeo - Gustavo Guanabara',
             status: 'Em andamento',
             downloadUrl: '/files/Certificates/WP_Course_Certificate.pdf'
+        },
+        {
+            title: 'Scrum Fundamentals',
+            institution: 'ScrumStudy',
+            status: 'Concluído',
+            downloadUrl: '/files/Certificates/ScrumFundamentalsCertified.pdf'
         }
     ])
 </script>
