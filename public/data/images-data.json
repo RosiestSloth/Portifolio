@@ -1,0 +1,92 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "title": "Vinicius no Mar",
+            "filename": "Vinicius_no_mar.jpg",
+            "path": "/imgs/MinhasImgs/Vinicius_no_mar.jpg",
+            "width": 800,
+            "height": 700
+        },
+        {
+            "id": 2,
+            "title": "Vinicius Programando",
+            "filename": "Vinicius_Programando.jpg",
+            "path": "/imgs/MinhasImgs/Vinicius_Programando.jpg",
+            "width": 700,
+            "height": 1245
+        },
+        {
+            "id": 3,
+            "title": "Sushi",
+            "filename": "Sushi.jpg",
+            "path": "/imgs/MinhasImgs/Sushi.jpg",
+            "width": 700,
+            "height": 1245
+        },
+        {
+            "id": 4,
+            "title": "RX 7600",
+            "filename": "RX_7600.jpg",
+            "path": "/imgs/MinhasImgs/RX_7600.jpg",
+            "width": 700,
+            "height": 1245
+        },
+        {
+            "id": 5,
+            "title": "Placa de Vídeo",
+            "filename": "Placa_de-Video.jpg",
+            "path": "/imgs/MinhasImgs/Placa_de-Video.jpg",
+            "width": 700,
+            "height": 1245
+        },
+        {
+            "id": 6,
+            "title": "Pinturas",
+            "filename": "Pinturas.jpg",
+            "path": "/imgs/MinhasImgs/Pinturas.jpg",
+            "width": 700,
+            "height": 1245
+        },
+        {
+            "id": 7,
+            "title": "JavaScript UniEvangélica",
+            "filename": "JavaScript_UniEvangélica.jpg",
+            "path": "/imgs/MinhasImgs/JavaScript_UniEvangélica.jpg",
+            "width": 700,
+            "height": 1245
+        },
+        {
+            "id": 8,
+            "title": "Gatinho",
+            "filename": "Gatinho.jpg",
+            "path": "/imgs/MinhasImgs/Gatinho.jpg",
+            "width": 700,
+            "height": 1245
+        },
+        {
+            "id": 9,
+            "title": "Editando Portifólio",
+            "filename": "Editanto_Portifólio.jpg",
+            "path": "/imgs/MinhasImgs/Editanto_Portifólio.jpg",
+            "width": 1245,
+            "height": 700
+        },
+        {
+            "id": 10,
+            "title": "Construção do Portifólio",
+            "filename": "Construcao_do_portifólio.jpg",
+            "path": "/imgs/MinhasImgs/Construcao_do_portifólio.jpg",
+            "width": 1245,
+            "height": 700
+        },
+        {
+            "id": 11,
+            "title": "Codando com Equipe",
+            "filename": "Codando_com_Equipe.jpg",
+            "path": "/imgs/MinhasImgs/Codando_com_Equipe.jpg",
+            "width": 700,
+            "height": 1245
+        }
+    ]
+}
