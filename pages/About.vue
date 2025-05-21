@@ -59,7 +59,7 @@
                             </li>
                             <li>
                                 <NuxtLink 
-                                    href="https://linkedin.com/in/seu-perfil" 
+                                    href="https://www.linkedin.com/in/rosiestsloth/" 
                                     target="_blank" 
                                     rel="noopener noreferrer"
                                     class="flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--variacao3)]/70 hover:bg-[var(--variacao2)] transition-colors shadow-lg"
