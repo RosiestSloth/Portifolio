@@ -80,11 +80,5 @@
     width: '100%',
     pauseAutoplayOnHover: true,
     itemsToShow: 1,
-    breakpoints: {
-        1024: {
-            itemsToShow: 2,
-            snapAlign: 'start',
-        }
-    }
   })
 </script>

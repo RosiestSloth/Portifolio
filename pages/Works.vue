@@ -3,8 +3,8 @@
     <main class="container mx-auto px-4 py-8 max-w-6xl">
         <article class="space-y-12">
             <!-- Correspondente Vianopolino -->
-            <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6">
-                <h3 class="text-3xl font-bold md:text-4xl text-[var(--cor-Principal)]">
+            <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6" id="wordpress">
+                <h3 class="text-2xl font-bold sm:text-3xl md:text-4xl text-[var(--variacao4)]">
                     Correspondente Vianopolino
                 </h3>
                 
@@ -55,8 +55,8 @@
             </section>
 
             <!-- FeedBack Analytics -->
-            <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6">
-                <h3 class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+            <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6" id="figma">
+                <h3 class="text-3xl font-bold text-[var(--variacao4)]">
                     FeedBack Analytics
                 </h3>
 
@@ -86,9 +86,10 @@
                         <div class="bg-white/10 p-4 rounded-lg">
                             <h4 class="text-xl font-semibold mb-2">Tecnologias Utilizadas</h4>
                             <div class="flex flex-wrap gap-2">
-                                <TechnologyBadge icon="ai" label="IA" />
-                                <TechnologyBadge icon="qrcode" label="QR Code" />
-                                <TechnologyBadge icon="whatsapp" label="WhatsApp" />
+                                <TechnologyBadge icon="IA" label="IA" />
+                                <TechnologyBadge icon="QR Code" label="QR Code" />
+                                <TechnologyBadge icon="Figma" label="Figma" />
+                                <TechnologyBadge icon="React" label="React" />
                             </div>
                         </div>
                     </div>
@@ -96,8 +97,8 @@
             </section>
 
             <!-- Trajetória JavaScript -->
-            <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6">
-                <h3 class="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+            <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6" id="frameworks">
+                <h3 class="text-3xl font-bold text-[var(--variacao4)]">
                     Trajetória JavaScript
                 </h3>
                 <div class="relative rounded-lg overflow-hidden">
@@ -109,26 +110,26 @@
                         quality="100"
                     />
                 </div>
-                <p>
+                <p class="text-gray-300">
                     O projeto Trajetória JavaScript foi criado com o objetivo de auxiliar pessoas que, assim como eu, estão iniciando na área de desenvolvimento web. JavaScript é uma das linguagens mais utilizadas no setor, e por isso, decidi desenvolver este site para compartilhar conhecimento e ajudar outros a trilharem esse caminho com mais facilidade.
                     <br><br>
                     Durante o desenvolvimento dos exercícios, aprofundei meus conhecimentos em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>. Além disso, refinei minhas habilidades no uso de frameworks. Para este projeto, optei pelo <strong>Nuxt.js</strong> juntamente com <strong>TypeScript</strong>, que proporciona uma estrutura robusta e prática, facilitando a criação e organização do projeto.
                 </p>
-                <p>
+                <p class="text-gray-300">
                     Os 10 primeiros exercícios de <strong>JavaScript</strong> foram um marco importante na minha jornada de aprendizado. Encarei alguns desafios com determinação e, ao superá-los, senti uma grande satisfação. A cada exercício concluído, minha confiança e compreensão da linguagem cresciam, tornando a experiência ainda mais enriquecedora.
                 </p>
-                <p>
+                <p class="text-gray-300">
                     O projeto <strong>Trajetória JavaScript</strong> ainda está em desenvolvimento... 
                 </p>
             </section>
 
             <!-- Projetos Educacionais -->
-            <h2 class="text-3xl font-bold text-center mt-12 mb-8">Projetos Educacionais</h2>
+            <h2 class="text-3xl font-bold text-center mt-12 mb-8 text-[var(--variacao4)]">Projetos Educacionais</h2>
             
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Projeto Android -->
                 <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6">
-                    <h3 class="text-2xl font-bold mb-4">
+                    <h3 class="text-2xl font-bold mb-4 text-[var(--variacao5)]">
                         Projeto Android
                     </h3>
                     <NuxtImg 
@@ -138,20 +139,20 @@
                         id="ProjetoAndroid"
                         quality="100"
                     />
-                    <p>
+                    <p class="text-gray-300">
                         O <strong>Projeto Android</strong> foi desenvolvido com intuito educacional e sem fins lucrativos. 
                     </p>
-                    <p>
+                    <p class="text-gray-300">
                         Criado por <strong>Gustavo Guanabara</strong> para o <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">CursoemVideo</a>, esse projeto faz parte do curso de HTML5 e CSS3. Durante o curso, pude aprofundar minhas habilidades em desenvolvimento Web Front-End, e esse foi o meu primeiro projeto dentro da formação. 
                     </p>
-                    <p>
+                    <p class="text-gray-300">
                         Minha experiência no desenvolvimento foi bastante satisfatória, proporcionando um aprendizado valioso e reforçando meus conhecimentos na área.
                     </p>
                 </section>
 
                 <!-- Projeto Cordel -->
                 <section class="bg-white/5 rounded-xl p-6 backdrop-blur-sm space-y-6">
-                    <h3 class="text-2xl font-bold mb-4">
+                    <h3 class="text-2xl font-bold mb-4 text-[var(--variacao5)]">
                         Projeto Cordel
                     </h3>
                     <NuxtImg 
@@ -162,9 +163,9 @@
                         quality="100"
                     />
 
-                    <p>
+                    <p class="text-gray-300">
                         O <strong>Projeto Cordel</strong> foi desenvolvido com intuito educacional e sem fins lucrativos.<br><br>
-                        Criado por <strong>Gustavo Guanabara</strong> para o <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">CursoemVideo</a>, esse projeto faz parte do curso de <strong>HTML5</strong> e <strong>CSS3</strong>. Durante o curso, pude aprofundar minhas habilidades em <strong>desenvolvimento Web Front-End</strong>, e esse foi o meu primeiro projeto dentro da formação. <br><br>
+                        Criado por <strong>Gustavo Guanabara</strong> para o <NuxtLink href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">CursoemVideo</NuxtLink>, esse projeto faz parte do curso de <strong>HTML5</strong> e <strong>CSS3</strong>. Durante o curso, pude aprofundar minhas habilidades em <strong>desenvolvimento Web Front-End</strong>, e esse foi o meu primeiro projeto dentro da formação. <br><br>
                         Minha experiência no desenvolvimento foi bastante satisfatória, proporcionando um aprendizado valioso e reforçando meus conhecimentos na área.
                     </p>
                 </section>

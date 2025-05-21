@@ -96,17 +96,17 @@
                     <WorkCard 
                         title="WordPress"
                         description="Adquiri muita experiência no desenvolvimento e na manutenção de sites em WordPress, atuando em projetos como o site Correspondente Vianopolino."
-                        link="/pages/Works#wordpress"
+                        link="/Works#wordpress"
                     />
                     <WorkCard 
                         title="Figma"
                         description="Durante o desenvolvimento de diversos protótipos de sites, aperfeiçoei minhas habilidades em design e experiência do usuário."
-                        link="/pages/Works#figma"
+                        link="/Works#figma"
                     />
                     <WorkCard 
                         title="Frameworks"
                         description="Adquiri muita experiência trabalhando com frameworks em projetos como o Follow-Up, com destaque para Tailwind CSS."
-                        link="/pages/Works#frameworks"
+                        link="/Works#frameworks"
                     />
                 </div>
             </section>
@@ -141,7 +141,7 @@
             <section class="space-y-8">
                 <h2 class="text-3xl font-bold text-center text-[var(--variacao5)]">Educação e Certificações</h2>
                 
-                <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex flex-col gap-8">
                     <div class="bg-white/5 rounded-xl p-6">
                         <h3 class="text-2xl font-bold mb-4 text-[var(--variacao5)]">Educação</h3>
                         <div class="space-y-4">
@@ -155,7 +155,7 @@
                     </div>
 
                     <div class="bg-white/5 rounded-xl p-6">
-                        <h3 class="text-2xl font-bold mb-4">Certificações</h3>
+                        <h3 class="text-2xl font-bold mb-4 text-[var(--variacao5)]">Certificações</h3>
                         <div class="space-y-6">
                             <CertificateCard 
                                 v-for="cert in certificates" 
@@ -209,7 +209,10 @@
             downloadUrl: '/files/Certificates/HTML_e_CSS.zip'
         },
         {
-            
+            title: 'WordPress',
+            institution: 'Curso em Vídeo - Gustavo Guanabara',
+            status: 'Em andamento',
+            downloadUrl: '/files/Certificates/WP_Course_Certificate.pdf'
         }
     ])
 </script>

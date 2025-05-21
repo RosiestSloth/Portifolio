@@ -31,6 +31,7 @@ body {
     background-color: var(--fundo);
     overflow-x: hidden;
     max-width: 100vw;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -101,8 +102,8 @@ strong {
 .carousel .carousel__next {
     height: 50px;
     width: 50px;
-    color: rgba(0, 0, 0, 0.493);
     font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
     background-color: var(--cor-Principal);
     border-radius: 50%;
     padding: 10px;
@@ -117,7 +118,7 @@ strong {
 
 .carousel .carousel__prev:not(:hover),
 .carousel .carousel__next:not(:hover) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.200);
 }
 
 @media (max-width: 768px) {

@@ -9,8 +9,11 @@
                     aria-label="Navegação para o Início"
                     class="group flex items-center font-chamadas gap-2 hover:text-white duration-100 ease-in w-full hover:bg-[var(--hover)] h-12 rounded-l-md pl-2"
                     to="/"
+                    id="home-link"
+                    :class="{ 'active': isHomeActive }"
+                    @click="setActiveLink('home')"
                     >
-                    <HomeIcon
+                    <HomeIcon id="icon-home"
                         class="sm:block hidden stroke-black fill-black/20 group-hover:stroke-white group-hover:fill-white/20 size-8 duration-100 ease-in"
                     />
                     <p class="w-full text-center sm:w-auto">Home</p>
@@ -19,26 +22,33 @@
                     aria-label="Navegação para a página Sobre mim"
                     class="group flex items-center gap-2 hover:text-white text-center duration-100 ease-in w-full hover:bg-[var(--hover)] h-12 before:w-[1px] before:h-[40px] before:bg-black/50"
                     to="/About"
+                    id="about-link"
+                    :class="{ 'active': isAboutActive }"
+                    @click="setActiveLink('about')"
                     >
-                    <AboutIcon
-                        class="sm:block hidden stroke-black fill-black group-hover:stroke-white group-hover:fill-white size-8 duration-100 ease-in"
-                    />
+                    <AboutIcon id="icon" class="sm:block hidden stroke-black fill-black group-hover:stroke-white group-hover:fill-white size-8 duration-100 ease-in"/>
                     <p class="w-full text-center sm:w-auto">Sobre</p>
                 </NuxtLink>
                 <NuxtLink
                     aria-label="Navegação para a página Meus Trabalhos"
                     class="group flex items-center gap-2 hover:text-white duration-100 ease-in w-full hover:bg-[var(--hover)] h-12 before:w-[1px] before:h-[40px] before:bg-black/50 pr-2"
                     to="/Works"
+                    id="works-link"
+                    :class="{ 'active': isWorksActive }"
+                    @click="setActiveLink('works')"
                     >
-                    <WorksIcon class="sm:block hidden stroke-black fill-black group-hover:stroke-white group-hover:fill-white size-8 duration-100 ease-in"/>
+                    <WorksIcon id="icon" class="sm:block hidden stroke-black fill-black group-hover:stroke-white group-hover:fill-white size-8 duration-100 ease-in"/>
                     <p class="w-full text-center sm:w-auto">Trabalhos</p>
                 </NuxtLink>
                 <NuxtLink
                     aria-label="Navegação para a página Minhas Fotos"
-                    class="group flex items-center gap-2 hover:text-white duration-100 ease-in w-full hover:bg-[var(--hover)] h-12 rounded-r-md before:w-[1px] before:h-[40px] before:bg-black/50"
+                    class="group flex items-center gap-2 hover:text-white duration-100 ease-in w-full ml-[-1px] hover:bg-[var(--hover)] h-12 rounded-r-md before:w-[1px] before:h-[40px] before:bg-black/50"
                     to="/Photos"
+                    id="photos-link"
+                    :class="{ 'active': isPhotosActive }"
+                    @click="setActiveLink('photos')"
                     >
-                    <PhotosIcon class="sm:block hidden stroke-black fill-black group-hover:stroke-white group-hover:fill-white size-8 duration-100 ease-in"/>
+                    <PhotosIcon id="icon" class="sm:block hidden stroke-black fill-black group-hover:stroke-white group-hover:fill-white size-8 duration-100 ease-in"/>
                     <p class="w-full text-center sm:w-auto">Fotos</p>
                 </NuxtLink>
             </nav>
@@ -46,15 +56,66 @@
     </header>
 </template>
 
-<style >
-
-</style>
-
 <script setup>
     import HomeIcon from '../public/svgs/Home.svg';
     import AboutIcon from '../public/svgs/About.svg';
     import WorksIcon from '../public/svgs/Works.svg';
     import PhotosIcon from '../public/svgs/Photos.svg';
+    import { ref, onMounted, computed } from 'vue'
+    import { useRoute } from 'vue-router'
 
-    const indexHeader = document.querySelector('#')
+    const route = useRoute()
+    
+    const isHomeActive = ref(false)
+    const isAboutActive = ref(false)
+    const isWorksActive = ref(false)
+    const isPhotosActive = ref(false)
+
+    const setActiveLink = (link) => {
+        isHomeActive.value = link === 'home'
+        isAboutActive.value = link === 'about'
+        isWorksActive.value = link === 'works'
+        isPhotosActive.value = link === 'photos'
+    }
+
+    onMounted(() => {
+        const path = route.path
+        if (path === '/') setActiveLink('home')
+        else if (path === '/About') setActiveLink('about')
+        else if (path === '/Works') setActiveLink('works')
+        else if (path === '/Photos') setActiveLink('photos')
+    })
+
+    const backgroundClass = computed(() => {
+        switch (route.path) {
+            case '/':
+                return 'bg-home'
+            case '/About':
+                return 'bg-about'
+            case '/Works':
+                return 'bg-works'
+            case '/Photos':
+                return 'bg-photos'
+            default:
+                return 'bg-default'
+        }
+    })
 </script>
+
+<style scoped>
+    .active {
+        background-color: var(--hover);
+        color: white;
+        pointer-events: none;
+    }
+
+    .active #icon {
+        stroke: white;
+        fill: white;
+    }
+
+    .active #icon-home {
+        stroke: white;
+        fill: rgba(255, 255, 255, 0.200);
+    }
+</style>

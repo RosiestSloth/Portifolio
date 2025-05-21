@@ -1,15 +1,15 @@
 <template>
     <div class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-colors">
         <div class="flex justify-between items-start mb-3">
-            <h4 class="text-lg font-semibold">{{ certificate.title }}</h4>
+            <h4 class="text-lg text-[var(--variacao4)] font-semibold">{{ certificate.title }}</h4>
             <a 
                 v-if="certificate.downloadUrl"
                 :href="certificate.downloadUrl"
                 download
-                class="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors"
+                class="p-2 rounded-lg bg-white/10 hover:bg-white/20 transition-colors group"
                 :title="'Baixar certificado ' + certificate.title"
             >
-                <FilesIcon class="size-5" />
+                <FilesIcon class="size-5 fill-white group-hover:fill-white/50 transition-colors" />
             </a>
         </div>
         
