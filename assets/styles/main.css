@@ -57,7 +57,7 @@ h4 {
 section p {
     font-family: var(--corpo);
     font-weight: 400;
-    font-size: clamp(1rem, 0.5rem + 1vw, 2rem);
+    font-size: clamp(0.8rem, 0.5rem + 1vw, 1rem);
     text-align: justify;
 }
 

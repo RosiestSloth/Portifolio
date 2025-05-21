@@ -73,7 +73,14 @@
                 <div class="space-y-4 text-gray-300">
                     <p>O projeto <strong>FeedBack Analytics</strong> surgiu de uma inquietação: por que tantas empresas parecem pedir feedback apenas para ignorá-lo em seguida?</p>
 
-                    <div class="grid md:grid-cols-2 gap-6">
+                    <h4 class="text-lg font-semibold">Você pode visualizar meu trabalho clicando no botão abaixo:</h4>
+
+                    <NuxtLink to="https://www.figma.com/design/V5dB9WqReUtpzQO1HcqClZ/Gest%C3%A3o-de-Feedback-com-IA?node-id=0-1&t=5LiiN12eVW4WWv82-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[var(--variacao5)] font-[var(--chamadas)] hover:text-[var(--variacao5)]/90 transition-colors bg-[var(--variacao2)] hover:bg-[var(--variacao2)]/70 p-2 rounded-md">Ver Design</NuxtLink>
+
+                    <div class="grid md:grid-cols-2 gap-6 mt-4">
                         <div class="bg-white/10 p-4 rounded-lg">
                             <h4 class="text-xl font-semibold mb-2">Principais Responsabilidades</h4>
                             <ul class="list-disc list-inside space-y-2">
@@ -143,7 +150,7 @@
                         O <strong>Projeto Android</strong> foi desenvolvido com intuito educacional e sem fins lucrativos. 
                     </p>
                     <p class="text-gray-300">
-                        Criado por <strong>Gustavo Guanabara</strong> para o <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">CursoemVideo</a>, esse projeto faz parte do curso de HTML5 e CSS3. Durante o curso, pude aprofundar minhas habilidades em desenvolvimento Web Front-End, e esse foi o meu primeiro projeto dentro da formação. 
+                        Criado por <strong>Gustavo Guanabara</strong> para o <a href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">Curso em Video</a>, esse projeto faz parte do curso de HTML5 e CSS3. Durante o curso, pude aprofundar minhas habilidades em desenvolvimento Web Front-End, e esse foi o meu primeiro projeto dentro da formação. 
                     </p>
                     <p class="text-gray-300">
                         Minha experiência no desenvolvimento foi bastante satisfatória, proporcionando um aprendizado valioso e reforçando meus conhecimentos na área.
@@ -165,7 +172,7 @@
 
                     <p class="text-gray-300">
                         O <strong>Projeto Cordel</strong> foi desenvolvido com intuito educacional e sem fins lucrativos.<br><br>
-                        Criado por <strong>Gustavo Guanabara</strong> para o <NuxtLink href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">CursoemVideo</NuxtLink>, esse projeto faz parte do curso de <strong>HTML5</strong> e <strong>CSS3</strong>. Durante o curso, pude aprofundar minhas habilidades em <strong>desenvolvimento Web Front-End</strong>, e esse foi o meu primeiro projeto dentro da formação. <br><br>
+                        Criado por <strong>Gustavo Guanabara</strong> para o <NuxtLink href="https://www.cursoemvideo.com/" target="_blank" rel="noopener noreferrer">Curso em Video</NuxtLink>, esse projeto faz parte do curso de <strong>HTML5</strong> e <strong>CSS3</strong>. Durante o curso, pude aprofundar minhas habilidades em <strong>desenvolvimento Web Front-End</strong>, e esse foi o meu primeiro projeto dentro da formação. <br><br>
                         Minha experiência no desenvolvimento foi bastante satisfatória, proporcionando um aprendizado valioso e reforçando meus conhecimentos na área.
                     </p>
                 </section>
